@@ -18,7 +18,6 @@
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 <body>
-<h1>branch prueba </h1>
 <div class="container" id="page">
 
 	<div id="header">
