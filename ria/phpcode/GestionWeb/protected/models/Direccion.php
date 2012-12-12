@@ -1,22 +1,27 @@
 <?php
 
 /**
- * This is the model class for table "pais".
+ * This is the model class for table "direccion".
  *
- * The followings are the available columns in table 'pais':
+ * The followings are the available columns in table 'direccion':
  * @property integer $id
- * @property string $nombre
- * @property string $codigotelefono
+ * @property integer $tipodireccion
+ * @property string $calle
+ * @property integer $personaid
+ * @property string $numero
+ * @property integer $localidad
  *
  * The followings are the available model relations:
- * @property Provincia[] $provincias
+ * @property Localidad $localidad0
+ * @property Persona $persona
+ * @property Tipocontacto $tipodireccion0
  */
-class Pais extends CActiveRecord
+class Direccion extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return Pais the static model class
+	 * @return Direccion the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -28,7 +33,7 @@ class Pais extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'pais';
+		return 'direccion';
 	}
 
 	/**
@@ -39,12 +44,13 @@ class Pais extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nombre', 'required'),
-			array('nombre', 'length', 'max'=>45),
-			array('codigotelefono', 'length', 'max'=>10),
+			array('tipodireccion, calle, personaid', 'required'),
+			array('tipodireccion, personaid, localidad', 'numerical', 'integerOnly'=>true),
+			array('calle', 'length', 'max'=>100),
+			array('numero', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, nombre, codigotelefono', 'safe', 'on'=>'search'),
+			array('id, tipodireccion, calle, personaid, numero, localidad', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -56,7 +62,9 @@ class Pais extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'provincias' => array(self::HAS_MANY, 'Provincia', 'paisid'),
+			'localidad0' => array(self::BELONGS_TO, 'Localidad', 'localidad'),
+			'persona' => array(self::BELONGS_TO, 'Persona', 'personaid'),
+			'tipodireccion0' => array(self::BELONGS_TO, 'Tipocontacto', 'tipodireccion'),
 		);
 	}
 
@@ -67,8 +75,11 @@ class Pais extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'nombre' => 'País',
-			'codigotelefono' => 'Cod. Teléfonico',
+			'tipodireccion' => 'Tipodireccion',
+			'calle' => 'Calle',
+			'personaid' => 'Personaid',
+			'numero' => 'Numero',
+			'localidad' => 'Localidad',
 		);
 	}
 
@@ -84,8 +95,11 @@ class Pais extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('nombre',$this->nombre,true);
-		$criteria->compare('codigotelefono',$this->codigotelefono,true);
+		$criteria->compare('tipodireccion',$this->tipodireccion);
+		$criteria->compare('calle',$this->calle,true);
+		$criteria->compare('personaid',$this->personaid);
+		$criteria->compare('numero',$this->numero,true);
+		$criteria->compare('localidad',$this->localidad);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
