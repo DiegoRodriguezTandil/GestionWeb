@@ -1,0 +1,3 @@
+# a comment – this is ignored
+*.log       # archivos de log
+phpcode/GestionWeb/assets     # archivos de session
