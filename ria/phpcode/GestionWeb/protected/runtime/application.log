@@ -7564,3 +7564,28 @@ in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\S
 2012/12/12 20:21:34 [trace] [system.CModule] Loading "clientScript" application component
 in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (32)
 in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/12 20:22:58 [trace] [system.CModule] Loading "log" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/12 20:22:58 [trace] [system.CModule] Loading "request" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/12 20:22:58 [trace] [system.CModule] Loading "urlManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/12 20:22:58 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\column1.php (2)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (32)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/12 20:22:58 [trace] [system.CModule] Loading "user" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\main.php (37)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\column1.php (6)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (32)
+2012/12/12 20:22:58 [trace] [system.CModule] Loading "session" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\main.php (37)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\column1.php (6)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (32)
+2012/12/12 20:22:58 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\main.php (55)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\column1.php (6)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (32)
+2012/12/12 20:22:58 [trace] [system.CModule] Loading "clientScript" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (32)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
