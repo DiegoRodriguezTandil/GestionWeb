@@ -18,6 +18,11 @@
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 <body>
+<<<<<<< HEAD
+	<h1>BRANCH PRUEBA</h1>
+
+=======
+>>>>>>> 8dfddb4016a7c0beaf09270064c9453fd0e2a288
 <div class="container" id="page">
 
 	<div id="header">
