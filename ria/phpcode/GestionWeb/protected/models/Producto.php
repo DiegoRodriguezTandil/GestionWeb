@@ -1,4 +1,4 @@
-<?php
+gi<?php
 
 /**
  * This is the model class for table "producto".
@@ -62,7 +62,7 @@ class Producto extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'categoria' => array(self::BELONGS_TO, 'Categoriaproducto', 'categoriaid'),
+			'categoria' => array(self::BELONGS_TO, 'CategoriaProducto', 'categoriaid'),
 			'stocks' => array(self::HAS_MANY, 'Stock', 'idproducto'),
 		);
 	}

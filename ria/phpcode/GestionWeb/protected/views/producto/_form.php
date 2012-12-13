@@ -35,7 +35,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'categoriaid'); ?>
-		<?php echo $form->textField($model,'categoriaid'); ?>
+		<?php echo $form->dropDownList($model,'categoriaid', CHtml::listData(CategoriaProducto::model()->findAll(), 'id', 'categoria')); ?>
 		<?php echo $form->error($model,'categoriaid'); ?>
 	</div>
 
