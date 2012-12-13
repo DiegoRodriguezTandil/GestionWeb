@@ -29,8 +29,8 @@
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
 				array('label'=>'Geografica', 'url'=>array('geografica/index'), 'items'=>array(
-                    array('label'=>'Paises', 'url'=>"index.php?r=pais", 'tag'=>'new')),
-                    array('label'=>'Provincias', 'url'=>"index.php?r=provincia", 'tag'=>'popular')),                                			
+                    array('label'=>'Paises', 'url'=>"index.php?r=pais"),
+                    array('label'=>'Provincias', 'url'=>"index.php?r=provincia" ))),                                			
 				array('label'=>'Paises', 'url'=>"index.php?r=pais"),
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contact', 'url'=>array('/site/contact')),
