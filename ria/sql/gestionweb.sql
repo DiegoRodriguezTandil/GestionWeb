@@ -305,14 +305,14 @@ DROP TABLE IF EXISTS `gestion`.`stock` ;
 
 CREATE  TABLE IF NOT EXISTS `gestion`.`stock` (
   `id` INT NOT NULL AUTO_INCREMENT ,
-  `idproducto` INT NULL ,
+  `productoid` INT NULL ,
   `cantidad` INT NULL ,
   `cantidadMIN` INT NULL ,
   `cantidadMAX` INT NULL ,
   PRIMARY KEY (`id`) ,
-  INDEX `fk_stock_producto` (`idproducto` ASC) ,
+  INDEX `fk_stock_producto` (`productoid` ASC) ,
   CONSTRAINT `fk_stock_producto`
-    FOREIGN KEY (`idproducto` )
+    FOREIGN KEY (`productoid` )
     REFERENCES `gestion`.`producto` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
