@@ -8374,3 +8374,330 @@ in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\S
 2012/12/13 11:46:32 [trace] [system.CModule] Loading "clientScript" application component
 in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (32)
 in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:04 [trace] [system.CModule] Loading "log" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:04 [trace] [system.CModule] Loading "request" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:04 [trace] [system.CModule] Loading "urlManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:04 [trace] [system.base.CModule] Loading "gii" module
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:04 [trace] [system.CModule] Loading "user" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:04 [trace] [system.CModule] Loading "session" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:04 [trace] [system.CModule] Loading "log" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:04 [trace] [system.CModule] Loading "request" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:04 [trace] [system.CModule] Loading "urlManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:04 [trace] [system.base.CModule] Loading "gii" module
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:04 [trace] [system.CModule] Loading "user" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:04 [trace] [system.CModule] Loading "session" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:04 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:04 [trace] [system.CModule] Loading "clientScript" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:04 [trace] [system.CModule] Loading "assetManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:04 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:08 [trace] [system.CModule] Loading "log" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:08 [trace] [system.CModule] Loading "request" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:08 [trace] [system.CModule] Loading "urlManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:08 [trace] [system.base.CModule] Loading "gii" module
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:08 [trace] [system.CModule] Loading "user" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:08 [trace] [system.CModule] Loading "session" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:08 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:08 [trace] [system.CModule] Loading "clientScript" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:08 [trace] [system.CModule] Loading "assetManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:08 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:09 [trace] [system.CModule] Loading "log" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:09 [trace] [system.CModule] Loading "request" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:09 [trace] [system.CModule] Loading "urlManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:09 [trace] [system.base.CModule] Loading "gii" module
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:09 [trace] [system.CModule] Loading "user" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:09 [trace] [system.CModule] Loading "session" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:10 [trace] [system.CModule] Loading "log" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:10 [trace] [system.CModule] Loading "request" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:10 [trace] [system.CModule] Loading "urlManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:10 [trace] [system.base.CModule] Loading "gii" module
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:10 [trace] [system.CModule] Loading "user" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:10 [trace] [system.CModule] Loading "session" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:10 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:10 [trace] [system.CModule] Loading "clientScript" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:10 [trace] [system.CModule] Loading "assetManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:10 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:43 [trace] [system.CModule] Loading "log" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:43 [trace] [system.CModule] Loading "request" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:43 [trace] [system.CModule] Loading "urlManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:43 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\column1.php (2)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (32)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:01:43 [trace] [system.CModule] Loading "user" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\main.php (37)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\column1.php (6)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (32)
+2012/12/13 12:01:43 [trace] [system.CModule] Loading "session" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\main.php (37)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\column1.php (6)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (32)
+2012/12/13 12:01:43 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\main.php (55)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\column1.php (6)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (32)
+2012/12/13 12:01:43 [trace] [system.CModule] Loading "clientScript" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (32)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:02:15 [trace] [system.CModule] Loading "log" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:02:15 [trace] [system.CModule] Loading "request" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:02:15 [trace] [system.CModule] Loading "urlManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:02:15 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\column1.php (2)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (32)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:02:15 [trace] [system.CModule] Loading "user" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\main.php (37)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\column1.php (6)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (32)
+2012/12/13 12:02:15 [trace] [system.CModule] Loading "session" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\main.php (37)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\column1.php (6)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (32)
+2012/12/13 12:02:15 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\main.php (55)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\column1.php (6)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (32)
+2012/12/13 12:02:15 [trace] [system.CModule] Loading "clientScript" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (32)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:38 [trace] [system.CModule] Loading "log" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:38 [trace] [system.CModule] Loading "request" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:38 [trace] [system.CModule] Loading "urlManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:38 [trace] [system.web.filters.CFilterChain] Running filter PaisController.filteraccessControl()
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:38 [trace] [system.CModule] Loading "user" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:38 [trace] [system.CModule] Loading "session" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:38 [trace] [system.CModule] Loading "db" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (125)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:38 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (125)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:38 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `pais`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (125)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:38 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `pais`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (125)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:38 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\pais\index.php (20)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (128)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:38 [trace] [system.db.ar.CActiveRecord] Pais.count()
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\pais\index.php (20)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (128)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:38 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `pais` `t`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\pais\index.php (20)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (128)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:38 [trace] [system.db.ar.CActiveRecord] Pais.findAll()
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\pais\index.php (20)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (128)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:38 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pais` `t` LIMIT 10
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\pais\index.php (20)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (128)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:38 [trace] [system.CModule] Loading "assetManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\pais\index.php (20)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (128)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:38 [trace] [system.CModule] Loading "clientScript" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\pais\index.php (20)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (128)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:39 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\pais\index.php (20)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (128)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:41 [trace] [system.CModule] Loading "log" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:41 [trace] [system.CModule] Loading "request" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:41 [trace] [system.CModule] Loading "urlManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:41 [trace] [system.web.filters.CFilterChain] Running filter PaisController.filteraccessControl()
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:41 [trace] [system.CModule] Loading "user" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:41 [trace] [system.CModule] Loading "session" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:41 [trace] [system.CModule] Loading "db" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (136)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:41 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (136)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:41 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `pais`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (136)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:41 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `pais`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (136)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:41 [trace] [system.CModule] Loading "clientScript" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\pais\admin.php (15)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (143)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:41 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\pais\_search.php (12)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\pais\admin.php (40)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (143)
+2012/12/13 12:08:41 [trace] [system.db.ar.CActiveRecord] Pais.count()
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\pais\admin.php (55)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (143)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:41 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `pais` `t`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\pais\admin.php (55)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (143)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:41 [trace] [system.db.ar.CActiveRecord] Pais.findAll()
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\pais\admin.php (55)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (143)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:41 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pais` `t` LIMIT 10
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\pais\admin.php (55)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (143)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:41 [trace] [system.CModule] Loading "assetManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\pais\admin.php (55)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (143)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:41 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\pais\admin.php (55)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (143)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:42 [trace] [system.CModule] Loading "log" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:42 [trace] [system.CModule] Loading "request" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:42 [trace] [system.CModule] Loading "urlManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:42 [trace] [system.web.filters.CFilterChain] Running filter PaisController.filteraccessControl()
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:42 [trace] [system.CModule] Loading "user" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:42 [trace] [system.CModule] Loading "session" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:42 [trace] [system.CModule] Loading "db" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (125)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:42 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (125)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:43 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `pais`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (125)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:43 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `pais`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (125)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:43 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\pais\index.php (20)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (128)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:43 [trace] [system.db.ar.CActiveRecord] Pais.count()
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\pais\index.php (20)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (128)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:43 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `pais` `t`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\pais\index.php (20)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (128)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:43 [trace] [system.db.ar.CActiveRecord] Pais.findAll()
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\pais\index.php (20)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (128)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:43 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pais` `t` LIMIT 10
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\pais\index.php (20)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (128)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:43 [trace] [system.CModule] Loading "assetManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\pais\index.php (20)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (128)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:43 [trace] [system.CModule] Loading "clientScript" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\pais\index.php (20)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (128)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:43 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\pais\index.php (20)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\PaisController.php (128)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:44 [trace] [system.CModule] Loading "log" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:44 [trace] [system.CModule] Loading "request" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:44 [trace] [system.CModule] Loading "urlManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:44 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\column1.php (2)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (32)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 12:08:44 [trace] [system.CModule] Loading "user" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\main.php (37)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\column1.php (6)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (32)
+2012/12/13 12:08:44 [trace] [system.CModule] Loading "session" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\main.php (37)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\column1.php (6)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (32)
+2012/12/13 12:08:44 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\main.php (55)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\column1.php (6)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (32)
+2012/12/13 12:08:44 [trace] [system.CModule] Loading "clientScript" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (32)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
