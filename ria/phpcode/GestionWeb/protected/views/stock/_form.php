@@ -16,8 +16,8 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'idproducto'); ?>
-		<?php echo $form->textField($model,'idproducto'); ?>
+		<?php echo $form->labelEx($model,'Producto'); ?>
+		<?php echo $form->dropDownList($model,'idproducto', CHtml::listData(Producto::model()->findAll(), 'id', 'nombre')); ?>
 		<?php echo $form->error($model,'idproducto'); ?>
 	</div>
 
