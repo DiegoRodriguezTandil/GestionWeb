@@ -373,3 +373,373 @@ in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\P
 in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\main.php (45)
 in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\column2.php (23)
 in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\ProductoController.php (79)
+2012/12/13 15:45:00 [trace] [system.CModule] Loading "log" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:45:00 [trace] [system.CModule] Loading "request" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:45:00 [trace] [system.CModule] Loading "urlManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:45:00 [trace] [system.web.filters.CFilterChain] Running filter ProductoController.filteraccessControl()
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:45:00 [trace] [system.CModule] Loading "user" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:45:00 [trace] [system.CModule] Loading "session" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:45:00 [trace] [system.CModule] Loading "db" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\ProductoController.php (125)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:45:00 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\ProductoController.php (125)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:45:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `producto`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\ProductoController.php (125)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:45:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `producto`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\ProductoController.php (125)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:45:00 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\producto\index.php (20)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\ProductoController.php (128)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:45:00 [trace] [system.db.ar.CActiveRecord] Producto.count()
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\producto\index.php (20)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\ProductoController.php (128)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:45:00 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `producto` `t`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\producto\index.php (20)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\ProductoController.php (128)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:45:00 [trace] [system.db.ar.CActiveRecord] Producto.findAll()
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\producto\index.php (20)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\ProductoController.php (128)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:45:00 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `producto` `t` LIMIT 10
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\producto\index.php (20)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\ProductoController.php (128)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:45:00 [trace] [system.CModule] Loading "assetManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\producto\index.php (20)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\ProductoController.php (128)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:45:00 [trace] [system.CModule] Loading "clientScript" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\producto\index.php (20)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\ProductoController.php (128)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:45:00 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\views\producto\index.php (20)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\ProductoController.php (128)
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:58:57 [trace] [system.CModule] Loading "log" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:58:57 [trace] [system.CModule] Loading "request" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:58:57 [trace] [system.CModule] Loading "urlManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:58:57 [trace] [system.base.CModule] Loading "gii" module
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:58:57 [trace] [system.CModule] Loading "user" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:58:57 [trace] [system.CModule] Loading "session" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:58:57 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:58:57 [trace] [system.CModule] Loading "clientScript" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:58:57 [trace] [system.CModule] Loading "assetManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:58:57 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.CModule] Loading "log" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.CModule] Loading "request" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.CModule] Loading "urlManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.base.CModule] Loading "gii" module
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.CModule] Loading "user" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.CModule] Loading "session" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.CModule] Loading "db" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.CModule] Loading "clientScript" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW TABLES
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `asiento`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `asiento`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `categoriaproducto`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `categoriaproducto`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `cuenta`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `cuenta`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `detalleasiento`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `detalleasiento`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `direccion`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `direccion`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `localidad`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `localidad`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `mail`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `mail`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `pais`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `pais`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `persona`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `persona`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `producto`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `producto`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `provincia`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `provincia`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `recibo`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `recibo`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `stock`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `stock`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `telefono`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `telefono`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `tipocliente`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tipocliente`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `tipocontacto`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tipocontacto`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `usuario`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `usuario`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `venta`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `venta`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.CModule] Loading "assetManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:00 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.CModule] Loading "log" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.CModule] Loading "request" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.CModule] Loading "urlManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.base.CModule] Loading "gii" module
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.CModule] Loading "user" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.CModule] Loading "session" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.CModule] Loading "db" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `stock`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `stock`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW TABLES
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `asiento`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `asiento`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `categoriaproducto`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `categoriaproducto`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `cuenta`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `cuenta`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `detalleasiento`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `detalleasiento`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `direccion`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `direccion`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `localidad`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `localidad`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `mail`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `mail`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `pais`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `pais`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `persona`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `persona`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `producto`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `producto`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `provincia`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `provincia`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `recibo`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `recibo`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `telefono`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `telefono`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `tipocliente`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tipocliente`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `tipocontacto`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tipocontacto`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `usuario`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `usuario`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `venta`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `venta`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.CModule] Loading "clientScript" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.CModule] Loading "assetManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:16 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.CModule] Loading "log" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.CModule] Loading "request" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.CModule] Loading "urlManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.base.CModule] Loading "gii" module
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.CModule] Loading "user" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.CModule] Loading "session" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.CModule] Loading "db" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `stock`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `stock`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW TABLES
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `asiento`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `asiento`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `categoriaproducto`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `categoriaproducto`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `cuenta`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `cuenta`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `detalleasiento`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `detalleasiento`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `direccion`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `direccion`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `localidad`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `localidad`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `mail`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `mail`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `pais`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `pais`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `persona`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `persona`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `producto`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `producto`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `provincia`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `provincia`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `recibo`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `recibo`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `telefono`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `telefono`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `tipocliente`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tipocliente`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `tipocontacto`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tipocontacto`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `usuario`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `usuario`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `venta`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `venta`
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.CModule] Loading "clientScript" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.CModule] Loading "assetManager" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2012/12/13 15:59:19 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\Trabajo\Proyecto\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
