@@ -1,74 +1,36 @@
-<?php
-/* @var $this PersonaController */
-/* @var $model Persona */
-/* @var $form CActiveForm */
-?>
-
-<div class="form">
-
-<?php $form=$this->beginWidget('CActiveForm', array(
+<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm',array(
 	'id'=>'persona-form',
+	'type'=>'horizontal',
+	'htmlOptions'=>array('class'=>'well'),
 	'enableAjaxValidation'=>false,
-	 //'htmlOptions'=>array('enctype'=>'multipart/form-data',),
-    )); ?>
+)); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="help-block">Fields with <span class="required">*</span> are required.</p>
 
 	<?php echo $form->errorSummary($model); ?>
-	
-	<div class="row">
-		<?php echo $form->labelEx($model,'apellido'); ?>
-		<?php echo $form->textField($model,'apellido',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($model,'apellido'); ?>
-	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'nombre'); ?>
-		<?php echo $form->textField($model,'nombre',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($model,'nombre'); ?>
-	</div>
+	<?php echo $form->textFieldRow($model,'apellido',array('class'=>'span5','maxlength'=>45)); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'empresa'); ?>
-		<?php echo $form->textField($model,'empresa',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($model,'empresa'); ?>
-	</div>
+	<?php echo $form->textFieldRow($model,'nombre',array('class'=>'span5','maxlength'=>45)); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'dni'); ?>
-		<?php echo $form->textField($model,'dni',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($model,'dni'); ?>
-	</div>
+	<?php echo $form->textFieldRow($model,'empresa',array('class'=>'span5','maxlength'=>45)); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'web'); ?>
-		<?php echo $form->textField($model,'web',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($model,'web'); ?>
-	</div>
+	<?php echo $form->textFieldRow($model,'dni',array('class'=>'span5','maxlength'=>45)); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'foto'); ?>
-		<?php echo $form->textField($model,'foto',array('size'=>60,'maxlength'=>255)); ?>
-		<?php echo $form->error($model,'foto'); ?>
-	</div>
+	<?php echo $form->textFieldRow($model,'web',array('class'=>'span5','maxlength'=>45)); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'intereses'); ?>
-		<?php echo $form->textField($model,'intereses',array('size'=>60,'maxlength'=>255)); ?>
-		<?php echo $form->error($model,'intereses'); ?>
-	</div>
+	<?php echo $form->textFieldRow($model,'foto',array('class'=>'span5','maxlength'=>255)); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'cuit'); ?>
-		<?php echo $form->textField($model,'cuit',array('size'=>15,'maxlength'=>15)); ?>
-		<?php echo $form->error($model,'cuit'); ?>
-	</div>
+	<?php echo $form->textFieldRow($model,'intereses',array('class'=>'span5','maxlength'=>255)); ?>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
-		<?php echo CHtml::button('Cancel',array('onclick'=>"window.parent.$('#cru-dialog').dialog('close');window.parent.$('#cru-frame').attr('src','');")); ?>
+	<?php echo $form->textFieldRow($model,'cuit',array('class'=>'span5','maxlength'=>15)); ?>
+
+	<div class="form-actions">
+		<?php $this->widget('bootstrap.widgets.TbButton', array(
+			'buttonType'=>'submit',
+			'type'=>'primary',
+			'label'=>$model->isNewRecord ? 'Create' : 'Save',
+		)); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
-
-</div><!-- form -->

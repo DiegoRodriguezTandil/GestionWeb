@@ -51,6 +51,7 @@ class Persona extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('apellido, nombre, empresa, dni, web', 'length', 'max'=>45),
+			array('apellido, nombre, empresa, dni, web', 'required'),
 			array('foto, intereses', 'length', 'max'=>255),
 			array('cuit', 'length', 'max'=>15),
 			// The following rule is used by search().
@@ -70,6 +71,7 @@ class Persona extends CActiveRecord
 			'clientes' => array(self::HAS_MANY, 'Cliente', 'persona_id'),
 			'direccions' => array(self::HAS_MANY, 'Direccion', 'personaid'),
 			'mails' => array(self::HAS_MANY, 'Mail', 'personaid'),
+			'mailsCount' => array(self::STAT, 'Mail', 'personaid'),
 			'proveedors' => array(self::HAS_MANY, 'Proveedor', 'personaid'),
 			'telefonos' => array(self::HAS_MANY, 'Telefono', 'personaid'),
 			'usuarios' => array(self::HAS_MANY, 'Usuario', 'personaid'),

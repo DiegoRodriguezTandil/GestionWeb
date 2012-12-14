@@ -1,15 +1,12 @@
 <?php
-/* @var $this PersonaController */
-/* @var $model Persona */
-
 $this->breadcrumbs=array(
 	'Personas'=>array('index'),
 	'Create',
 );
 
 $this->menu=array(
-	array('label'=>'List Persona', 'url'=>array('index')),
-	array('label'=>'Manage Persona', 'url'=>array('admin')),
+	array('label'=>'List Persona','url'=>array('index')),
+	array('label'=>'Manage Persona','url'=>array('admin')),
 );
 ?>
 

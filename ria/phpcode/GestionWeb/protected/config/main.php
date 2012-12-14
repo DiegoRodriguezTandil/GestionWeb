@@ -7,10 +7,10 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'My Web Application',
+	'name'=>'Qwavee - ',
 
 	// preloading 'log' component
-	'preload'=>array('log'),
+	'preload'=>array('log', 'bootstrap'),
 
 	// autoloading model and component classes
 	'import'=>array(
@@ -24,6 +24,7 @@ return array(
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'1234',
+			'generatorPaths' => array('bootstrap.gii'),
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			//'ipFilters'=>array('127.0.0.1','::1'),
 		),
@@ -31,11 +32,15 @@ return array(
 	),
 
 	// application components
-	'components'=>array(
-		'user'=>array(
-			// enable cookie-based authentication
-			'allowAutoLogin'=>true,
-		),
+'components'=>array(
+    'user'=>array(
+       // enable cookie-based authentication
+       'allowAutoLogin'=>true,
+    ), 
+    'bootstrap'=>array(
+        'class'=>'ext.bootstrap.components.Bootstrap', // assuming you extracted bootstrap under extensions
+    ),
+
 		// uncomment the following to enable URLs in path-format
 		/*
 		'urlManager'=>array(
