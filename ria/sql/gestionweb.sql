@@ -47,13 +47,13 @@ DROP TABLE IF EXISTS `gestion`.`cuenta` ;
 CREATE  TABLE IF NOT EXISTS `gestion`.`cuenta` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `maxCTACTE` DECIMAL(10,2) NULL ,
-  `personaid` INT(11) NULL ,
+  `persona_id` INT(11) NULL ,
   `cliente` TINYINT(1) NULL ,
   `provedor` TINYINT(1) NULL ,
   PRIMARY KEY (`id`) ,
-  INDEX `fk_cliente_persona` (`personaid` ASC) ,
+  INDEX `fk_cliente_persona` (`persona_id` ASC) ,
   CONSTRAINT `fk_cliente_persona`
-    FOREIGN KEY (`personaid` )
+    FOREIGN KEY (`persona_id` )
     REFERENCES `gestion`.`persona` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
@@ -67,21 +67,21 @@ DROP TABLE IF EXISTS `gestion`.`detalleAsiento` ;
 
 CREATE  TABLE IF NOT EXISTS `gestion`.`detalleAsiento` (
   `id` INT NOT NULL AUTO_INCREMENT ,
-  `cuentaid` INT NOT NULL ,
+  `cuenta_id` INT NOT NULL ,
   `tipoDiario` VARCHAR(1) NULL ,
   `tipoMayor` VARCHAR(1) NULL ,
   `importe` DECIMAL(10,2) NOT NULL ,
-  `asientoid` INT NOT NULL ,
+  `asiento_id` INT NOT NULL ,
   PRIMARY KEY (`id`) ,
-  INDEX `fk_detalle_asiento` (`asientoid` ASC) ,
-  INDEX `fk_detalle_cuenta` (`cuentaid` ASC) ,
+  INDEX `fk_detalle_asiento` (`asiento_id` ASC) ,
+  INDEX `fk_detalle_cuenta` (`cuenta_id` ASC) ,
   CONSTRAINT `fk_detalle_asiento`
-    FOREIGN KEY (`asientoid` )
+    FOREIGN KEY (`asiento_id` )
     REFERENCES `gestion`.`asiento` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_detalle_cuenta`
-    FOREIGN KEY (`cuentaid` )
+    FOREIGN KEY (`cuenta_id` )
     REFERENCES `gestion`.`cuenta` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
@@ -110,17 +110,17 @@ CREATE  TABLE IF NOT EXISTS `gestion`.`mail` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `tipo` INT NOT NULL ,
   `direccion` VARCHAR(45) NOT NULL ,
-  `personaid` INT NOT NULL ,
+  `persona_id` INT NOT NULL ,
   PRIMARY KEY (`id`) ,
   INDEX `fk_mail_tipocontacto` (`tipo` ASC) ,
-  INDEX `fk_mail_persona` (`personaid` ASC) ,
+  INDEX `fk_mail_persona` (`persona_id` ASC) ,
   CONSTRAINT `fk_mail_tipocontacto`
     FOREIGN KEY (`tipo` )
     REFERENCES `gestion`.`tipoContacto` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_mail_persona`
-    FOREIGN KEY (`personaid` )
+    FOREIGN KEY (`persona_id` )
     REFERENCES `gestion`.`persona` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
@@ -148,11 +148,11 @@ DROP TABLE IF EXISTS `gestion`.`provincia` ;
 CREATE  TABLE IF NOT EXISTS `gestion`.`provincia` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `nombre` VARCHAR(45) NULL ,
-  `paisid` INT NULL ,
+  `pais_id` INT NULL ,
   PRIMARY KEY (`id`) ,
-  INDEX `fk_provincia_pais` (`paisid` ASC) ,
+  INDEX `fk_provincia_pais` (`pais_id` ASC) ,
   CONSTRAINT `fk_provincia_pais`
-    FOREIGN KEY (`paisid` )
+    FOREIGN KEY (`pais_id` )
     REFERENCES `gestion`.`pais` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
@@ -167,13 +167,13 @@ DROP TABLE IF EXISTS `gestion`.`localidad` ;
 CREATE  TABLE IF NOT EXISTS `gestion`.`localidad` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `nombre` VARCHAR(45) NULL ,
-  `provinciaid` INT NULL ,
+  `provincia_id` INT NULL ,
   `codigotelefonico` VARCHAR(45) NULL ,
   `codigopostal` VARCHAR(45) NULL ,
   PRIMARY KEY (`id`) ,
-  INDEX `fk_localidad_provincia` (`provinciaid` ASC) ,
+  INDEX `fk_localidad_provincia` (`provincia_id` ASC) ,
   CONSTRAINT `fk_localidad_provincia`
-    FOREIGN KEY (`provinciaid` )
+    FOREIGN KEY (`provincia_id` )
     REFERENCES `gestion`.`provincia` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
@@ -189,12 +189,12 @@ CREATE  TABLE IF NOT EXISTS `gestion`.`direccion` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `tipodireccion` INT NOT NULL ,
   `calle` VARCHAR(100) NOT NULL ,
-  `personaid` INT NOT NULL ,
+  `persona_id` INT NOT NULL ,
   `numero` VARCHAR(45) NULL ,
   `localidad` INT NULL ,
   PRIMARY KEY (`id`) ,
   INDEX `fk_direccion_tipocontacto` (`tipodireccion` ASC) ,
-  INDEX `fk_direccion_persona` (`personaid` ASC) ,
+  INDEX `fk_direccion_persona` (`persona_id` ASC) ,
   INDEX `fk_direccion_localidad` (`localidad` ASC) ,
   CONSTRAINT `fk_direccion_tipocontacto`
     FOREIGN KEY (`tipodireccion` )
@@ -202,7 +202,7 @@ CREATE  TABLE IF NOT EXISTS `gestion`.`direccion` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_direccion_persona`
-    FOREIGN KEY (`personaid` )
+    FOREIGN KEY (`persona_id` )
     REFERENCES `gestion`.`persona` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
@@ -257,7 +257,7 @@ CREATE  TABLE IF NOT EXISTS `gestion`.`producto` (
   `nombre` VARCHAR(45) NOT NULL ,
   `precioVentaUnitario` DECIMAL(10,2) NULL ,
   `descripcion` VARCHAR(250) NULL ,
-  `categoriaid` INT NOT NULL ,
+  `categoria_id` INT NOT NULL ,
   `precioCostoUnitario` DECIMAL(10,2) NULL ,
   PRIMARY KEY (`id`) )
 ENGINE = InnoDB;
@@ -270,14 +270,14 @@ DROP TABLE IF EXISTS `gestion`.`stock` ;
 
 CREATE  TABLE IF NOT EXISTS `gestion`.`stock` (
   `id` INT NOT NULL AUTO_INCREMENT ,
-  `productoid` INT NULL ,
+  `producto_id` INT NULL ,
   `cantidad` INT NULL ,
   `cantidadMIN` INT NULL ,
   `cantidadMAX` INT NULL ,
   PRIMARY KEY (`id`) ,
-  INDEX `fk_stock_producto` (`productoid` ASC) ,
+  INDEX `fk_stock_producto` (`producto_id` ASC) ,
   CONSTRAINT `fk_stock_producto`
-    FOREIGN KEY (`productoid` )
+    FOREIGN KEY (`producto_id` )
     REFERENCES `gestion`.`producto` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
@@ -291,13 +291,13 @@ DROP TABLE IF EXISTS `gestion`.`usuario` ;
 
 CREATE  TABLE IF NOT EXISTS `gestion`.`usuario` (
   `id` INT NOT NULL AUTO_INCREMENT ,
-  `personaid` INT NOT NULL ,
+  `persona_id` INT NOT NULL ,
   `usuario` VARCHAR(45) NULL ,
   `clave` VARCHAR(45) NULL ,
-  PRIMARY KEY (`id`, `personaid`) ,
-  INDEX `fk_usuario_persona` (`personaid` ASC) ,
+  PRIMARY KEY (`id`, `persona_id`) ,
+  INDEX `fk_usuario_persona` (`persona_id` ASC) ,
   CONSTRAINT `fk_usuario_persona`
-    FOREIGN KEY (`personaid` )
+    FOREIGN KEY (`persona_id` )
     REFERENCES `gestion`.`persona` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
@@ -323,20 +323,20 @@ DROP TABLE IF EXISTS `gestion`.`venta` ;
 
 CREATE  TABLE IF NOT EXISTS `gestion`.`venta` (
   `id` INT NOT NULL AUTO_INCREMENT ,
-  `productoid` INT NULL ,
-  `cuentaid` INT NULL ,
+  `producto_id` INT NULL ,
+  `cuenta_id` INT NULL ,
   `fecha` DATE NULL ,
   `cantidad` INT NULL ,
   PRIMARY KEY (`id`) ,
-  INDEX `fk_venta_producto` (`productoid` ASC) ,
-  INDEX `fk_venta_cuenta` (`cuentaid` ASC) ,
+  INDEX `fk_venta_producto` (`producto_id` ASC) ,
+  INDEX `fk_venta_cuenta` (`cuenta_id` ASC) ,
   CONSTRAINT `fk_venta_producto`
-    FOREIGN KEY (`productoid` )
+    FOREIGN KEY (`producto_id` )
     REFERENCES `gestion`.`producto` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_venta_cuenta`
-    FOREIGN KEY (`cuentaid` )
+    FOREIGN KEY (`cuenta_id` )
     REFERENCES `gestion`.`cuenta` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
@@ -352,19 +352,19 @@ CREATE  TABLE IF NOT EXISTS `gestion`.`compra` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `cuentaid` INT NULL ,
   `fecha` DATE NULL ,
-  `productoid` INT NULL ,
+  `producto_id` INT NULL ,
   `cantidad` INT NULL ,
   PRIMARY KEY (`id`) ,
-  INDEX `fk_compra_producto` (`productoid` ASC) ,
-  INDEX `fk_compra_cuenta` () ,
+  INDEX `fk_compra_producto` (`producto_id` ASC) ,
+  INDEX `fk_compra_cuenta` (`cuentaid` ASC) ,
   CONSTRAINT `fk_compra_producto`
-    FOREIGN KEY (`productoid` )
+    FOREIGN KEY (`producto_id` )
     REFERENCES `gestion`.`producto` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_compra_cuenta`
-    FOREIGN KEY ()
-    REFERENCES `gestion`.`cuenta` ()
+    FOREIGN KEY (`cuentaid` )
+    REFERENCES `gestion`.`cuenta` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -389,14 +389,14 @@ DROP TABLE IF EXISTS `gestion`.`factura` ;
 
 CREATE  TABLE IF NOT EXISTS `gestion`.`factura` (
   `id` INT NOT NULL AUTO_INCREMENT ,
-  `clienteid` INT NULL ,
+  `cliente_id` INT NULL ,
   `fecha` DATE NULL ,
   `numeroFactura` VARCHAR(15) NULL ,
-  `formaPagoid` INT NOT NULL ,
+  `formaPago_id` INT NOT NULL ,
   PRIMARY KEY (`id`) ,
-  INDEX `fk_factura_formaPago` (`formaPagoid` ASC) ,
+  INDEX `fk_factura_formaPago` (`formaPago_id` ASC) ,
   CONSTRAINT `fk_factura_formaPago`
-    FOREIGN KEY (`formaPagoid` )
+    FOREIGN KEY (`formaPago_id` )
     REFERENCES `gestion`.`formaPago` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
@@ -410,20 +410,20 @@ DROP TABLE IF EXISTS `gestion`.`detalleFactura` ;
 
 CREATE  TABLE IF NOT EXISTS `gestion`.`detalleFactura` (
   `id` INT NOT NULL AUTO_INCREMENT ,
-  `facturaid` INT NOT NULL ,
-  `productoid` INT NULL ,
+  `factura_id` INT NULL ,
+  `producto_id` INT NULL ,
   `importe` DECIMAL(10,2) NOT NULL ,
-  PRIMARY KEY (`id`, `facturaid`) ,
-  INDEX `fk_detalleFactura_producto` (`productoid` ASC) ,
-  INDEX `fk_detalleFactura_factura` (`facturaid` ASC) ,
-  CONSTRAINT `fk_detalleFactura_producto`
-    FOREIGN KEY (`productoid` )
-    REFERENCES `gestion`.`producto` (`categoriaid` )
+  PRIMARY KEY (`id`) ,
+  INDEX `fk_detalleFactura_factura` (`factura_id` ASC) ,
+  INDEX `fk_detalleFactura_producto` (`producto_id` ASC) ,
+  CONSTRAINT `fk_detalleFactura_factura`
+    FOREIGN KEY (`factura_id` )
+    REFERENCES `gestion`.`factura` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fk_detalleFactura_factura`
-    FOREIGN KEY (`facturaid` )
-    REFERENCES `gestion`.`factura` (`id` )
+  CONSTRAINT `fk_detalleFactura_producto`
+    FOREIGN KEY (`producto_id` )
+    REFERENCES `gestion`.`producto` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
@@ -439,7 +439,7 @@ CREATE  TABLE IF NOT EXISTS `gestion`.`recibo` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `numero` VARCHAR(15) NULL ,
   `fecha` DATE NULL ,
-  `clienteid` INT NULL ,
+  `cliente_id` INT NULL ,
   PRIMARY KEY (`id`) )
 ENGINE = InnoDB;
 
@@ -450,18 +450,18 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `gestion`.`producto_categoriaProducto` ;
 
 CREATE  TABLE IF NOT EXISTS `gestion`.`producto_categoriaProducto` (
-  `productoid` INT NOT NULL ,
-  `categoriaProductoid` INT NOT NULL ,
-  PRIMARY KEY (`productoid`, `categoriaProductoid`) ,
-  INDEX `fk_producto_has_categoriaProducto_categoriaProducto1` (`categoriaProductoid` ASC) ,
-  INDEX `fk_producto_has_categoriaProducto_producto1` (`productoid` ASC) ,
+  `producto_id` INT NOT NULL ,
+  `categoriaProducto_id` INT NOT NULL ,
+  PRIMARY KEY (`producto_id`, `categoriaProducto_id`) ,
+  INDEX `fk_producto_has_categoriaProducto_categoriaProducto1` (`categoriaProducto_id` ASC) ,
+  INDEX `fk_producto_has_categoriaProducto_producto1` (`producto_id` ASC) ,
   CONSTRAINT `fk_producto_has_categoriaProducto_producto1`
-    FOREIGN KEY (`productoid` )
+    FOREIGN KEY (`producto_id` )
     REFERENCES `gestion`.`producto` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_producto_has_categoriaProducto_categoriaProducto1`
-    FOREIGN KEY (`categoriaProductoid` )
+    FOREIGN KEY (`categoriaProducto_id` )
     REFERENCES `gestion`.`categoriaProducto` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
@@ -487,7 +487,7 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `gestion`;
-INSERT INTO `gestion`.`provincia` (`id`, `nombre`, `paisid`) VALUES (1, 'Buenos Aires', 1);
+INSERT INTO `gestion`.`provincia` (`id`, `nombre`, `pais_id`) VALUES (1, 'Buenos Aires', 1);
 
 COMMIT;
 
@@ -496,7 +496,7 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `gestion`;
-INSERT INTO `gestion`.`localidad` (`id`, `nombre`, `provinciaid`, `codigotelefonico`, `codigopostal`) VALUES (1, 'Tandil', 1, '249', '7000');
+INSERT INTO `gestion`.`localidad` (`id`, `nombre`, `provincia_id`, `codigotelefonico`, `codigopostal`) VALUES (1, 'Tandil', 1, '249', '7000');
 
 COMMIT;
 
