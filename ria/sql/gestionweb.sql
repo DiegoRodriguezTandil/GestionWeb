@@ -40,18 +40,6 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `gestion`.`tipoCliente`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `gestion`.`tipoCliente` ;
-
-CREATE  TABLE IF NOT EXISTS `gestion`.`tipoCliente` (
-  `id` INT NOT NULL AUTO_INCREMENT ,
-  `tipo` VARCHAR(45) NULL ,
-  PRIMARY KEY (`id`) )
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
 -- Table `gestion`.`cuenta`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `gestion`.`cuenta` ;
@@ -59,19 +47,14 @@ DROP TABLE IF EXISTS `gestion`.`cuenta` ;
 CREATE  TABLE IF NOT EXISTS `gestion`.`cuenta` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `maxCTACTE` DECIMAL(10,2) NULL ,
-  `clienteid` INT(11) NULL ,
-  `tipoclienteid` INT(11) NULL ,
+  `personaid` INT(11) NULL ,
+  `cliente` TINYINT(1) NULL ,
+  `provedor` TINYINT(1) NULL ,
   PRIMARY KEY (`id`) ,
-  INDEX `fk_cliente_persona` (`clienteid` ASC) ,
-  INDEX `fk_cuenta_tipoclienteid` (`tipoclienteid` ASC) ,
+  INDEX `fk_cliente_persona` (`personaid` ASC) ,
   CONSTRAINT `fk_cliente_persona`
-    FOREIGN KEY (`clienteid` )
+    FOREIGN KEY (`personaid` )
     REFERENCES `gestion`.`persona` (`id` )
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_cuenta_tipoclienteid`
-    FOREIGN KEY (`tipoclienteid` )
-    REFERENCES `gestion`.`tipoCliente` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -265,18 +248,6 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `gestion`.`categoriaProducto`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `gestion`.`categoriaProducto` ;
-
-CREATE  TABLE IF NOT EXISTS `gestion`.`categoriaProducto` (
-  `id` INT NOT NULL AUTO_INCREMENT ,
-  `categoria` VARCHAR(45) NOT NULL ,
-  PRIMARY KEY (`id`) )
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
 -- Table `gestion`.`producto`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `gestion`.`producto` ;
@@ -288,13 +259,7 @@ CREATE  TABLE IF NOT EXISTS `gestion`.`producto` (
   `descripcion` VARCHAR(250) NULL ,
   `categoriaid` INT NOT NULL ,
   `precioCostoUnitario` DECIMAL(10,2) NULL ,
-  PRIMARY KEY (`id`) ,
-  INDEX `fk_producto_categoriaProducto` (`categoriaid` ASC) ,
-  CONSTRAINT `fk_producto_categoriaProducto`
-    FOREIGN KEY (`categoriaid` )
-    REFERENCES `gestion`.`categoriaProducto` (`id` )
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+  PRIMARY KEY (`id`) )
 ENGINE = InnoDB;
 
 
@@ -340,22 +305,34 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
+-- Table `gestion`.`categoriaProducto`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `gestion`.`categoriaProducto` ;
+
+CREATE  TABLE IF NOT EXISTS `gestion`.`categoriaProducto` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `categoria` VARCHAR(45) NOT NULL ,
+  PRIMARY KEY (`id`) )
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
 -- Table `gestion`.`venta`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `gestion`.`venta` ;
 
 CREATE  TABLE IF NOT EXISTS `gestion`.`venta` (
   `id` INT NOT NULL AUTO_INCREMENT ,
-  `stockid` INT NULL ,
+  `productoid` INT NULL ,
   `cuentaid` INT NULL ,
   `fecha` DATE NULL ,
   `cantidad` INT NULL ,
   PRIMARY KEY (`id`) ,
-  INDEX `fk_venta_stock` (`stockid` ASC) ,
+  INDEX `fk_venta_producto` (`productoid` ASC) ,
   INDEX `fk_venta_cuenta` (`cuentaid` ASC) ,
-  CONSTRAINT `fk_venta_stock`
-    FOREIGN KEY (`stockid` )
-    REFERENCES `gestion`.`stock` (`id` )
+  CONSTRAINT `fk_venta_producto`
+    FOREIGN KEY (`productoid` )
+    REFERENCES `gestion`.`producto` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_venta_cuenta`
@@ -363,20 +340,6 @@ CREATE  TABLE IF NOT EXISTS `gestion`.`venta` (
     REFERENCES `gestion`.`cuenta` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `gestion`.`recibo`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `gestion`.`recibo` ;
-
-CREATE  TABLE IF NOT EXISTS `gestion`.`recibo` (
-  `id` INT NOT NULL AUTO_INCREMENT ,
-  `numero` VARCHAR(15) NULL ,
-  `fecha` DATE NULL ,
-  `clienteid` INT NULL ,
-  PRIMARY KEY (`id`) )
 ENGINE = InnoDB;
 
 
@@ -389,14 +352,14 @@ CREATE  TABLE IF NOT EXISTS `gestion`.`compra` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `cuentaid` INT NULL ,
   `fecha` DATE NULL ,
-  `stockid` INT NULL ,
+  `productoid` INT NULL ,
   `cantidad` INT NULL ,
   PRIMARY KEY (`id`) ,
-  INDEX `fk_compra_stock` (`cuentaid` ASC) ,
+  INDEX `fk_compra_producto` (`productoid` ASC) ,
   INDEX `fk_compra_cuenta` () ,
-  CONSTRAINT `fk_compra_stock`
-    FOREIGN KEY (`cuentaid` )
-    REFERENCES `gestion`.`recibo` (`id` )
+  CONSTRAINT `fk_compra_producto`
+    FOREIGN KEY (`productoid` )
+    REFERENCES `gestion`.`producto` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_compra_cuenta`
@@ -465,6 +428,44 @@ CREATE  TABLE IF NOT EXISTS `gestion`.`detalleFactura` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
 COMMENT = '						';
+
+
+-- -----------------------------------------------------
+-- Table `gestion`.`recibo`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `gestion`.`recibo` ;
+
+CREATE  TABLE IF NOT EXISTS `gestion`.`recibo` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `numero` VARCHAR(15) NULL ,
+  `fecha` DATE NULL ,
+  `clienteid` INT NULL ,
+  PRIMARY KEY (`id`) )
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `gestion`.`producto_categoriaProducto`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `gestion`.`producto_categoriaProducto` ;
+
+CREATE  TABLE IF NOT EXISTS `gestion`.`producto_categoriaProducto` (
+  `productoid` INT NOT NULL ,
+  `categoriaProductoid` INT NOT NULL ,
+  PRIMARY KEY (`productoid`, `categoriaProductoid`) ,
+  INDEX `fk_producto_has_categoriaProducto_categoriaProducto1` (`categoriaProductoid` ASC) ,
+  INDEX `fk_producto_has_categoriaProducto_producto1` (`productoid` ASC) ,
+  CONSTRAINT `fk_producto_has_categoriaProducto_producto1`
+    FOREIGN KEY (`productoid` )
+    REFERENCES `gestion`.`producto` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_producto_has_categoriaProducto_categoriaProducto1`
+    FOREIGN KEY (`categoriaProductoid` )
+    REFERENCES `gestion`.`categoriaProducto` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
 
 
 
