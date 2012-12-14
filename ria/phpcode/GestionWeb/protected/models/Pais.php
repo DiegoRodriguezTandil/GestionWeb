@@ -45,6 +45,7 @@ class Pais extends CActiveRecord
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, nombre, codigotelefono', 'safe', 'on'=>'search'),
+			array('nombre', 'unique', 'attributeName'=>'nombre'),
 		);
 	}
 

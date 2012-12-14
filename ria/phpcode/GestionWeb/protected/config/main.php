@@ -9,6 +9,7 @@ return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Qwavee - ',
 
+
 	// preloading 'log' component
 	'preload'=>array('log', 'bootstrap'),
 
@@ -61,7 +62,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=gestion',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => '',
+			'password' => 'mysqlpass',
 			'charset' => 'utf8',
 		),
 		
