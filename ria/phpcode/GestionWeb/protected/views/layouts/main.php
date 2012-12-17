@@ -50,6 +50,14 @@
 										array('label'=>'Provincias', 'url'=>'index.php?r=provincia'),
 										array('label'=>'Localidades', 'url'=>'index.php?r=localidad'),					
 									)),
+								array('label'=>'Productos', 'url'=>'#', 
+								'items'=>array(
+										array('label'=>'Producto', 'url'=>'index.php?r=producto'),
+										array('label'=>'Categoria', 'url'=>'index.php?r=categoriaProducto'),
+										array('label'=>'LISTADOS'),
+										array('label'=>'Stock', 'url'=>'index.php?r=stock'),
+															
+									)),
 								
 					),
 ),

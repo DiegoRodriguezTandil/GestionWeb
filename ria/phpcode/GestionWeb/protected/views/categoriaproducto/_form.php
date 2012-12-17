@@ -6,12 +6,13 @@
 
 <div class="form">
 
-<?php $form=$this->beginWidget('CActiveForm', array(
+<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm',array(
 	'id'=>'categoriaproducto-form',
+	'type'=>'horizontal',
+	'htmlOptions'=>array('class'=>'well'),
 	'enableAjaxValidation'=>false,
 )); ?>
-
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">Campos obligatorios <span class="required">*</span>.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
