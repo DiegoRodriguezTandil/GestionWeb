@@ -21,12 +21,48 @@
 </head>
 <body>
 <div class="container" id="page">
+	
+	<?php
+	$this->widget('bootstrap.widgets.TbNavbar', array(
+				'type'=>null, // null or 'inverse'
+				'brand'=>'Qwavee Gestión',
+				'brandUrl'=>'www.qwavee.com',
+				'collapse'=>true, // requires bootstrap-responsive.css
+				'items'=>array(
+					array(
+					'class'=>'bootstrap.widgets.TbMenu',
+					'items'=>array(
+								array('label'=>'Home', 'url'=>'#', 'active'=>true),
+								array('label'=>'Link', 'url'=>'#'),
+								array('label'=>'Personas', 'url'=>'#', 
+								'items'=>array(
+										array('label'=>'Nueva Persona', 'url'=>'index.php?r=persona/create'),
+										array('label'=>'Crear Cuenta', 'url'=>'index.php?r=cuenta/create'),
+										array('label'=>'', 'url'=>'#'),
+										'---',
+										array('label'=>'LISTADOS'),
+										array('label'=>'Proveedores', 'url'=>'#'),
+										array('label'=>'Clientes', 'url'=>'#'),
+									)),
+								array('label'=>'Georeferencia', 'url'=>'#', 
+								'items'=>array(
+										array('label'=>'Paises', 'url'=>'index.php?r=pais'),
+										array('label'=>'Provincias', 'url'=>'index.php?r=provincia'),
+										array('label'=>'Localidades', 'url'=>'index.php?r=localidad'),					
+									)),
+								
+					),
+),
+'<form class="navbar-search pull-left" action=""><input type="text" class="search-query span2" placeholder="Search"></form>',
+),
+)); 
+	?>
 
-	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
+	<!--<div id="header">
+		<div id="logo"><?php //echo CHtml::encode(Yii::app()->name); ?></div>
 	</div><!-- header -->
 
-	<div id="mainmenu">
+	<!--<div id="mainmenu">
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),

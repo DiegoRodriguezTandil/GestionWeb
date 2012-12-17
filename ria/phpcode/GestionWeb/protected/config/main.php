@@ -62,7 +62,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=gestion',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'mysqlpass',
+			'password' => '',
 			'charset' => 'utf8',
 		),
 		
