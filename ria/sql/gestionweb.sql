@@ -20,6 +20,85 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
+-- Table `gestion`.`ctaPatrimonial`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `gestion`.`ctaPatrimonial` ;
+
+CREATE  TABLE IF NOT EXISTS `gestion`.`ctaPatrimonial` (
+  `id` INT NOT NULL ,
+  `nombre` VARCHAR(45) NOT NULL ,
+  PRIMARY KEY (`id`) )
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `gestion`.`Rubro`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `gestion`.`Rubro` ;
+
+CREATE  TABLE IF NOT EXISTS `gestion`.`Rubro` (
+  `id` INT NOT NULL ,
+  `nombre` VARCHAR(45) NOT NULL ,
+  `ctaPatrimonial_id` INT NOT NULL ,
+  PRIMARY KEY (`id`) ,
+  INDEX `fk_rubro_ctaPatrimonial` (`ctaPatrimonial_id` ASC) ,
+  CONSTRAINT `fk_rubro_ctaPatrimonial`
+    FOREIGN KEY (`ctaPatrimonial_id` )
+    REFERENCES `gestion`.`ctaPatrimonial` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `gestion`.`cuenta`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `gestion`.`cuenta` ;
+
+CREATE  TABLE IF NOT EXISTS `gestion`.`cuenta` (
+  `id` INT NOT NULL ,
+  `rubro_id` INT NOT NULL ,
+  `planCta` VARCHAR(45) NOT NULL ,
+  `nombre` VARCHAR(45) NULL ,
+  PRIMARY KEY (`id`) ,
+  INDEX `fk_cuenta_rubro` (`rubro_id` ASC) ,
+  CONSTRAINT `fk_cuenta_rubro`
+    FOREIGN KEY (`rubro_id` )
+    REFERENCES `gestion`.`Rubro` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = dec8;
+
+
+-- -----------------------------------------------------
+-- Table `gestion`.`detalleAsiento`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `gestion`.`detalleAsiento` ;
+
+CREATE  TABLE IF NOT EXISTS `gestion`.`detalleAsiento` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `tipo` VARCHAR(1) NULL ,
+  `importe` DECIMAL(10,2) NOT NULL ,
+  `asiento_id` INT NOT NULL ,
+  `cuenta_id` INT NOT NULL ,
+  PRIMARY KEY (`id`, `asiento_id`) ,
+  INDEX `fk_detalleAsiento_asiento` (`asiento_id` ASC) ,
+  INDEX `fk_detalleAsiento_cuenta` (`cuenta_id` ASC) ,
+  CONSTRAINT `fk_detalleAsiento_asiento`
+    FOREIGN KEY (`asiento_id` )
+    REFERENCES `gestion`.`asiento` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_detalleAsiento_cuenta`
+    FOREIGN KEY (`cuenta_id` )
+    REFERENCES `gestion`.`cuenta` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
 -- Table `gestion`.`persona`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `gestion`.`persona` ;
@@ -35,55 +114,6 @@ CREATE  TABLE IF NOT EXISTS `gestion`.`persona` (
   `cuit` VARCHAR(15) NULL ,
   `fechaAlta` DATE NOT NULL ,
   PRIMARY KEY (`id`) )
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `gestion`.`cuenta`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `gestion`.`cuenta` ;
-
-CREATE  TABLE IF NOT EXISTS `gestion`.`cuenta` (
-  `id` INT NOT NULL AUTO_INCREMENT ,
-  `maxCTACTE` DECIMAL(10,2) NULL ,
-  `persona_id` INT(11) NULL ,
-  `cliente` TINYINT(1) NULL ,
-  `provedor` TINYINT(1) NULL ,
-  PRIMARY KEY (`id`) ,
-  INDEX `fk_cliente_persona` (`persona_id` ASC) ,
-  CONSTRAINT `fk_cliente_persona`
-    FOREIGN KEY (`persona_id` )
-    REFERENCES `gestion`.`persona` (`id` )
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `gestion`.`detalleAsiento`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `gestion`.`detalleAsiento` ;
-
-CREATE  TABLE IF NOT EXISTS `gestion`.`detalleAsiento` (
-  `id` INT NOT NULL AUTO_INCREMENT ,
-  `cuenta_id` INT NOT NULL ,
-  `tipoDiario` VARCHAR(1) NULL ,
-  `tipoMayor` VARCHAR(1) NULL ,
-  `importe` DECIMAL(10,2) NOT NULL ,
-  `asiento_id` INT NOT NULL ,
-  PRIMARY KEY (`id`) ,
-  INDEX `fk_detalle_asiento` (`asiento_id` ASC) ,
-  INDEX `fk_detalle_cuenta` (`cuenta_id` ASC) ,
-  CONSTRAINT `fk_detalle_asiento`
-    FOREIGN KEY (`asiento_id` )
-    REFERENCES `gestion`.`asiento` (`id` )
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_detalle_cuenta`
-    FOREIGN KEY (`cuenta_id` )
-    REFERENCES `gestion`.`cuenta` (`id` )
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
@@ -208,6 +238,34 @@ CREATE  TABLE IF NOT EXISTS `gestion`.`direccion` (
   CONSTRAINT `fk_direccion_localidad`
     FOREIGN KEY (`localidad` )
     REFERENCES `gestion`.`localidad` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `gestion`.`cuentaPersona`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `gestion`.`cuentaPersona` ;
+
+CREATE  TABLE IF NOT EXISTS `gestion`.`cuentaPersona` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `maxCTACTE` DECIMAL(10,2) NULL ,
+  `persona_id` INT(11) NOT NULL ,
+  `cliente` TINYINT(1) NULL ,
+  `provedor` TINYINT(1) NULL ,
+  `cuenta_id` INT NOT NULL ,
+  PRIMARY KEY (`id`) ,
+  INDEX `fk_cuentaPersona_persona` (`persona_id` ASC) ,
+  INDEX `fk_cuentaPersona_cuenta` (`cuenta_id` ASC) ,
+  CONSTRAINT `fk_cuentaPersona_persona`
+    FOREIGN KEY (`persona_id` )
+    REFERENCES `gestion`.`persona` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_cuentaPersona_cuenta`
+    FOREIGN KEY (`cuenta_id` )
+    REFERENCES `gestion`.`cuenta` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -349,20 +407,20 @@ DROP TABLE IF EXISTS `gestion`.`compra` ;
 
 CREATE  TABLE IF NOT EXISTS `gestion`.`compra` (
   `id` INT NOT NULL AUTO_INCREMENT ,
-  `cuentaid` INT NULL ,
+  `cuenta_id` INT NULL ,
   `fecha` DATE NULL ,
   `producto_id` INT NULL ,
   `cantidad` INT NULL ,
   PRIMARY KEY (`id`) ,
   INDEX `fk_compra_producto` (`producto_id` ASC) ,
-  INDEX `fk_compra_cuenta` (`cuentaid` ASC) ,
+  INDEX `fk_compra_cuenta` (`cuenta_id` ASC) ,
   CONSTRAINT `fk_compra_producto`
     FOREIGN KEY (`producto_id` )
     REFERENCES `gestion`.`producto` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_compra_cuenta`
-    FOREIGN KEY (`cuentaid` )
+    FOREIGN KEY (`cuenta_id` )
     REFERENCES `gestion`.`cuenta` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
@@ -467,10 +525,99 @@ CREATE  TABLE IF NOT EXISTS `gestion`.`producto_categoriaProducto` (
 ENGINE = InnoDB;
 
 
+-- -----------------------------------------------------
+-- Table `gestion`.`banco`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `gestion`.`banco` ;
+
+CREATE  TABLE IF NOT EXISTS `gestion`.`banco` (
+  `id` INT NOT NULL ,
+  `nombre` VARCHAR(45) NOT NULL ,
+  PRIMARY KEY (`id`) )
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `gestion`.`CtaCteBanco`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `gestion`.`CtaCteBanco` ;
+
+CREATE  TABLE IF NOT EXISTS `gestion`.`CtaCteBanco` (
+  `id` INT NOT NULL ,
+  `nro` VARCHAR(45) NOT NULL ,
+  `fechaAlta` DATE NULL ,
+  `banco_id` INT NOT NULL ,
+  PRIMARY KEY (`id`) ,
+  INDEX `fk_CtaCteBanco_Banco` (`banco_id` ASC) ,
+  CONSTRAINT `fk_CtaCteBanco_Banco`
+    FOREIGN KEY (`banco_id` )
+    REFERENCES `gestion`.`banco` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `gestion`.`cuentaBanco`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `gestion`.`cuentaBanco` ;
+
+CREATE  TABLE IF NOT EXISTS `gestion`.`cuentaBanco` (
+  `id` INT NOT NULL ,
+  `CtaCteBanco_id` INT NOT NULL ,
+  `cuenta_id` INT NOT NULL ,
+  PRIMARY KEY (`id`) ,
+  INDEX `fk_cuentaBanco_Cuenta` (`cuenta_id` ASC) ,
+  INDEX `fk_cuentaBanco_CtaCteBanco` (`CtaCteBanco_id` ASC) ,
+  CONSTRAINT `fk_cuentaBanco_Cuenta`
+    FOREIGN KEY (`cuenta_id` )
+    REFERENCES `gestion`.`cuenta` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_cuentaBanco_CtaCteBanco`
+    FOREIGN KEY (`CtaCteBanco_id` )
+    REFERENCES `gestion`.`CtaCteBanco` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `gestion`.`producto_foto`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `gestion`.`producto_foto` ;
+
+CREATE  TABLE IF NOT EXISTS `gestion`.`producto_foto` (
+  `id` INT NOT NULL ,
+  `producto_id` INT NOT NULL ,
+  `url` VARCHAR(100) NULL ,
+  PRIMARY KEY (`id`) ,
+  INDEX `fk_producto_foto_foto` (`producto_id` ASC) ,
+  CONSTRAINT `fk_producto_foto_foto`
+    FOREIGN KEY (`producto_id` )
+    REFERENCES `gestion`.`producto` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+-- -----------------------------------------------------
+-- Data for table `gestion`.`ctaPatrimonial`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `gestion`;
+INSERT INTO `gestion`.`ctaPatrimonial` (`id`, `nombre`) VALUES (1, 'Activos');
+INSERT INTO `gestion`.`ctaPatrimonial` (`id`, `nombre`) VALUES (2, 'Pasivos');
+INSERT INTO `gestion`.`ctaPatrimonial` (`id`, `nombre`) VALUES (3, 'Patrimonio Neto');
+INSERT INTO `gestion`.`ctaPatrimonial` (`id`, `nombre`) VALUES (4, 'Resultados Negativos');
+INSERT INTO `gestion`.`ctaPatrimonial` (`id`, `nombre`) VALUES (5, 'Resultados Positivos');
+
+COMMIT;
 
 -- -----------------------------------------------------
 -- Data for table `gestion`.`pais`

@@ -13,7 +13,7 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Campos <span class="required">*</span> obligatorios.</p>
+	<p class="note">Campos obligatorios <span class="required">*</span>.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
