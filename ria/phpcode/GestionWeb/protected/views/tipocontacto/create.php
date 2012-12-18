@@ -1,15 +1,12 @@
 <?php
-/* @var $this TipocontactoController */
-/* @var $model Tipocontacto */
-
 $this->breadcrumbs=array(
 	'Tipocontactos'=>array('index'),
 	'Create',
 );
 
 $this->menu=array(
-	array('label'=>'List Tipocontacto', 'url'=>array('index')),
-	array('label'=>'Manage Tipocontacto', 'url'=>array('admin')),
+	array('label'=>'Listar Tipocontacto','url'=>array('index')),
+	array('label'=>'Administrar Tipocontacto','url'=>array('admin')),
 );
 ?>
 

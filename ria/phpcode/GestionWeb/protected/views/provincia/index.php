@@ -1,20 +1,17 @@
 <?php
-/* @var $this ProvinciaController */
-/* @var $dataProvider CActiveDataProvider */
-
 $this->breadcrumbs=array(
 	'Provincias',
 );
 
 $this->menu=array(
-	array('label'=>'Create Provincia', 'url'=>array('create')),
-	array('label'=>'Manage Provincia', 'url'=>array('admin')),
+	array('label'=>'Nuevo/a Provincia','url'=>array('create')),
+	array('label'=>'Administrar Provincia','url'=>array('admin')),
 );
 ?>
 
 <h1>Provincias</h1>
 
-<?php $this->widget('zii.widgets.CListView', array(
+<?php $this->widget('bootstrap.widgets.TbListView',array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
 )); ?>

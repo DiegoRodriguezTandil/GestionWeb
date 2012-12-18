@@ -1,42 +1,39 @@
-<?php
-/* @var $this MailController */
-/* @var $model Mail */
-/* @var $form CActiveForm */
-?>
-
-<div class="form">
-
-<?php $form=$this->beginWidget('CActiveForm', array(
+<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm',array(
 	'id'=>'mail-form',
+	'type'=>'horizontal',
+	'htmlOptions'=>array('class'=>'well'),
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="help-block">Campos con <span class="required">*</span> son requeridos.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'tipo'); ?>
-		<?php echo $form->textField($model,'tipo'); ?>
-		<?php echo $form->error($model,'tipo'); ?>
-	</div>
+	<?php echo $form->textFieldRow($model,'tipo',array('class'=>'span5')); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'direccion'); ?>
-		<?php echo $form->textField($model,'direccion',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($model,'direccion'); ?>
-	</div>
+	<?php echo $form->textFieldRow($model,'direccion',array('class'=>'span5','maxlength'=>45)); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'personaid'); ?>
-		<?php echo $form->textField($model,'personaid'); ?>
-		<?php echo $form->error($model,'personaid'); ?>
-	</div>
+	<?php echo $form->textFieldRow($model,'persona_id',array('class'=>'span5')); ?>
+	
+	<?php echo CHtml::button('add Photos', array('name'=>'addPhotos', 'id'=>'addPhotos')); ?>
+ 
+    <?php foreach($photosEvent as $i => $photo): ?>
+    <div id="photo-<?php echo $i ?>">
+        <div class="simple">   
+            <?php echo CHtml::activeLabelEx($photo,'photoUrl'); ?>
+            <?php echo CHtml::activeFileField($photo, "photoUrl[$i]"); ?>
+        </div>
+        <br />
+    </div>
+    <?php endforeach; ?>
+ 
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+	<div class="form-actions">
+		<?php $this->widget('bootstrap.widgets.TbButton', array(
+			'buttonType'=>'submit',
+			'type'=>'primary',
+			'label'=>$model->isNewRecord ? 'Guardar' : 'Actualizar',
+		)); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
-
-</div><!-- form -->

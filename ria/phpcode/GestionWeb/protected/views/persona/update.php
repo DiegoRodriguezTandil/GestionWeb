@@ -6,10 +6,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Persona','url'=>array('index')),
-	array('label'=>'Create Persona','url'=>array('create')),
-	array('label'=>'View Persona','url'=>array('view','id'=>$model->id)),
-	array('label'=>'Manage Persona','url'=>array('admin')),
+	array('label'=>'Listar Persona','url'=>array('index')),
+	array('label'=>'Nuevo/a Persona','url'=>array('create')),
+	array('label'=>'Ver Persona','url'=>array('view','id'=>$model->id)),
+	array('label'=>'Administrar Persona','url'=>array('admin')),
 );
 ?>
 

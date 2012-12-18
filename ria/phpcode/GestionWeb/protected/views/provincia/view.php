@@ -1,28 +1,25 @@
 <?php
-/* @var $this ProvinciaController */
-/* @var $model Provincia */
-
 $this->breadcrumbs=array(
 	'Provincias'=>array('index'),
 	$model->id,
 );
 
 $this->menu=array(
-	array('label'=>'List Provincia', 'url'=>array('index')),
-	array('label'=>'Create Provincia', 'url'=>array('create')),
-	array('label'=>'Update Provincia', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete Provincia', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Provincia', 'url'=>array('admin')),
+	array('label'=>'Listar Provincia','url'=>array('index')),
+	array('label'=>'Nuevo/a Provincia','url'=>array('create')),
+	array('label'=>'Actualizar Provincia','url'=>array('update','id'=>$model->id)),
+	array('label'=>'Eliminar Provincia','url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administrar Provincia','url'=>array('admin')),
 );
 ?>
 
 <h1>View Provincia #<?php echo $model->id; ?></h1>
-<?php echo CHtml::encode($model->id); ?>
-<?php $this->widget('zii.widgets.CDetailView', array(
+
+<?php $this->widget('bootstrap.widgets.TbDetailView',array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
 		'nombre',
-		'pais.nombre',
+		'pais_id',
 	),
 )); ?>

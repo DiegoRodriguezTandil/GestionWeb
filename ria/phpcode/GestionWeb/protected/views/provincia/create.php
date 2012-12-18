@@ -1,15 +1,12 @@
 <?php
-/* @var $this ProvinciaController */
-/* @var $model Provincia */
-
 $this->breadcrumbs=array(
 	'Provincias'=>array('index'),
 	'Create',
 );
 
 $this->menu=array(
-	array('label'=>'List Provincia', 'url'=>array('index')),
-	array('label'=>'Manage Provincia', 'url'=>array('admin')),
+	array('label'=>'Listar Provincia','url'=>array('index')),
+	array('label'=>'Administrar Provincia','url'=>array('admin')),
 );
 ?>
 

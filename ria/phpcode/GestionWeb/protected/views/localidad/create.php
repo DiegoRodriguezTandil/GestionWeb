@@ -1,15 +1,12 @@
 <?php
-/* @var $this LocalidadController */
-/* @var $model Localidad */
-
 $this->breadcrumbs=array(
 	'Localidads'=>array('index'),
 	'Create',
 );
 
 $this->menu=array(
-	array('label'=>'List Localidad', 'url'=>array('index')),
-	array('label'=>'Manage Localidad', 'url'=>array('admin')),
+	array('label'=>'List Localidad','url'=>array('index')),
+	array('label'=>'Manage Localidad','url'=>array('admin')),
 );
 ?>
 

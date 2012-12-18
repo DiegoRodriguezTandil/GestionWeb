@@ -4,12 +4,8 @@
 	<?php echo CHtml::link(CHtml::encode($data->id),array('view','id'=>$data->id)); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('apellido')); ?>:</b>
-	<?php echo CHtml::encode($data->apellido); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('nombre')); ?>:</b>
-	<?php echo CHtml::encode($data->nombre); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('razon social')); ?>:</b>
+	<?php echo CHtml::encode($data->razon social); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('empresa')); ?>:</b>
@@ -28,13 +24,17 @@
 	<?php echo CHtml::encode($data->foto); ?>
 	<br />
 
-	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('intereses')); ?>:</b>
 	<?php echo CHtml::encode($data->intereses); ?>
 	<br />
 
+	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('cuit')); ?>:</b>
 	<?php echo CHtml::encode($data->cuit); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('fechaAlta')); ?>:</b>
+	<?php echo CHtml::encode($data->fechaAlta); ?>
 	<br />
 
 	*/ ?>

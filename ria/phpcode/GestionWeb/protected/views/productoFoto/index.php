@@ -1,15 +1,15 @@
 <?php
 $this->breadcrumbs=array(
-	'Direccions',
+	'Producto Fotos',
 );
 
 $this->menu=array(
-	array('label'=>'Nuevo/a Direccion','url'=>array('create')),
-	array('label'=>'Administrar Direccion','url'=>array('admin')),
+	array('label'=>'Nuevo/a ProductoFoto','url'=>array('create')),
+	array('label'=>'Administrar ProductoFoto','url'=>array('admin')),
 );
 ?>
 
-<h1>Direccions</h1>
+<h1>Producto Fotos</h1>
 
 <?php $this->widget('bootstrap.widgets.TbListView',array(
 	'dataProvider'=>$dataProvider,

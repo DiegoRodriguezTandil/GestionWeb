@@ -1,49 +1,28 @@
-<?php
-/* @var $this LocalidadController */
-/* @var $model Localidad */
-/* @var $form CActiveForm */
-?>
-
-<div class="form">
-
-<?php $form=$this->beginWidget('CActiveForm', array(
+<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm',array(
 	'id'=>'localidad-form',
+	'type'=>'horizontal',
+	'htmlOptions'=>array('class'=>'well'),
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="help-block">Campos con <span class="required">*</span> son requeridos.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'nombre'); ?>
-		<?php echo $form->textField($model,'nombre',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($model,'nombre'); ?>
-	</div>
+	<?php echo $form->textFieldRow($model,'nombre',array('class'=>'span5','maxlength'=>45)); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'provinciaid'); ?>
-		<?php //echo $form->textField($model,'provinciaid'); ?>
-		<?php echo $form->dropDownList($model,'provinciaid', CHtml::listData(Provincia::model()->findAll(), 'id', 'nombre')); ?>
-		<?php echo $form->error($model,'provinciaid'); ?>
-	</div>
+	<?php echo $form->textFieldRow($model,'provincia_id',array('class'=>'span5')); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'codigotelefonico'); ?>
-		<?php echo $form->textField($model,'codigotelefonico',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($model,'codigotelefonico'); ?>
-	</div>
+	<?php echo $form->textFieldRow($model,'codigotelefonico',array('class'=>'span5','maxlength'=>45)); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'codigopostal'); ?>
-		<?php echo $form->textField($model,'codigopostal',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($model,'codigopostal'); ?>
-	</div>
+	<?php echo $form->textFieldRow($model,'codigopostal',array('class'=>'span5','maxlength'=>45)); ?>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+	<div class="form-actions">
+		<?php $this->widget('bootstrap.widgets.TbButton', array(
+			'buttonType'=>'submit',
+			'type'=>'primary',
+			'label'=>$model->isNewRecord ? 'Create' : 'Save',
+		)); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
-
-</div><!-- form -->

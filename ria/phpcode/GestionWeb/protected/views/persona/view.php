@@ -5,11 +5,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Persona','url'=>array('index')),
-	array('label'=>'Create Persona','url'=>array('create')),
-	array('label'=>'Update Persona','url'=>array('update','id'=>$model->id)),
-	array('label'=>'Delete Persona','url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Persona','url'=>array('admin')),
+	array('label'=>'Listar Persona','url'=>array('index')),
+	array('label'=>'Nuevo/a Persona','url'=>array('create')),
+	array('label'=>'Actualizar Persona','url'=>array('update','id'=>$model->id)),
+	array('label'=>'Eliminar Persona','url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administrar Persona','url'=>array('admin')),
 );
 ?>
 
@@ -19,13 +19,13 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
-		'apellido',
-		'nombre',
+		'razon social',
 		'empresa',
 		'dni',
 		'web',
 		'foto',
 		'intereses',
 		'cuit',
+		'fechaAlta',
 	),
 )); ?>

@@ -1,15 +1,12 @@
 <?php
-/* @var $this DireccionController */
-/* @var $model Direccion */
-
 $this->breadcrumbs=array(
 	'Direccions'=>array('index'),
 	'Create',
 );
 
 $this->menu=array(
-	array('label'=>'List Direccion', 'url'=>array('index')),
-	array('label'=>'Manage Direccion', 'url'=>array('admin')),
+	array('label'=>'Listar Direccion','url'=>array('index')),
+	array('label'=>'Administrar Direccion','url'=>array('admin')),
 );
 ?>
 

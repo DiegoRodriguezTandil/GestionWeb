@@ -1,36 +1,24 @@
-<?php
-/* @var $this TipocontactoController */
-/* @var $model Tipocontacto */
-/* @var $form CActiveForm */
-?>
-
-<div class="form">
-
-<?php $form=$this->beginWidget('CActiveForm', array(
+<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm',array(
 	'id'=>'tipocontacto-form',
+	'type'=>'horizontal',
+	'htmlOptions'=>array('class'=>'well'),
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="help-block">Campos con <span class="required">*</span> son requeridos.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'tipo'); ?>
-		<?php echo $form->textField($model,'tipo',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($model,'tipo'); ?>
-	</div>
+	<?php echo $form->textFieldRow($model,'tipo',array('class'=>'span5','maxlength'=>45)); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'descriptor'); ?>
-		<?php echo $form->textField($model,'descriptor',array('size'=>10,'maxlength'=>10)); ?>
-		<?php echo $form->error($model,'descriptor'); ?>
-	</div>
+	<?php echo $form->textFieldRow($model,'descriptor',array('class'=>'span5','maxlength'=>10)); ?>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+	<div class="form-actions">
+		<?php $this->widget('bootstrap.widgets.TbButton', array(
+			'buttonType'=>'submit',
+			'type'=>'primary',
+			'label'=>$model->isNewRecord ? 'Guardar' : 'Actualizar',
+		)); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
-
-</div><!-- form -->
