@@ -14,7 +14,7 @@ echo "\$this->breadcrumbs=array(
 ?>
 
 $this->menu=array(
-	array('label'=>'List <?php echo $this->modelClass; ?>','url'=>array('index')),
+	array('label'=>'Lista <?php echo $this->modelClass; ?>','url'=>array('index')),
 	array('label'=>'Create <?php echo $this->modelClass; ?>','url'=>array('create')),
 );
 

@@ -30,7 +30,7 @@ foreach($this->tableSchema->columns as $column)
 		<?php echo "<?php \$this->widget('bootstrap.widgets.TbButton', array(
 			'buttonType'=>'submit',
 			'type'=>'primary',
-			'label'=>\$model->isNewRecord ? 'Create' : 'Save',
+			'label'=>\$model->isNewRecord ? 'Guardar' : 'Actualizar',
 		)); ?>\n"; ?>
 	</div>
 
