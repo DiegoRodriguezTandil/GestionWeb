@@ -56,26 +56,66 @@ class ProductoController extends Controller
 		));
 	}
 
+
 	/**
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
 	public function actionCreate()
 	{
-		$model=new Producto;
+		// Create a new product Model
+		$model = new Producto;
+		
+		// Create an array model ProductoFoto
+    	// Adding an empty PhotoEvent to the form
+    	$photosProduct = array( new ProductoFoto, );
+	//	$photosProduct[0]->url= "carlitos";		
+	//	print_r($_FILES);die();
+		// Get the upload path
+		$dir = Yii::getPathOfAlias('application.uploads');
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
+ 
 
-		if(isset($_POST['Producto']))
-		{
+
+		/*
+		 * v  foreach ( $_POST['PhotoEvent'] as $i => $photo ) {
+            $photosEvent[$i] = new PhotoEvent;   
+            if ( isset( $_POST['PhotoEvent'][$i] ) )
+                $photosEvent[$i]->photoUrl = CUploadedFile::getInstance($photosEvent[$i], "photoUrl[$i]" );
+            //$photosEvent[$i]->photoUrl = CUploadedFile::getIstance($photosEvent[$i], "photoUrl[$i]" );
+            $valid = $valid && $photosEvent[$i]->validate();               
+        }*/
+		
+		 if( isset( $_POST['Producto'] ) )
+			{
+			
 			$model->attributes=$_POST['Producto'];
-			if($model->save())
+		//	$model->save();
+			//$photosProduct = new ProductoFoto;   
+		//	print_r($_FILES); die();
+			foreach ( $_FILES['ProductoFoto']['name']as $i => $photo ) { //echo "entra";die();
+				print_r($_FILES); die();
+				$photosProduct[$i] = new ProductoFoto;   
+				$photosProduct[$i]->attributes = $photo;
+		 	//	print_r($photosProduct[$i]->url); //die();
+				$photosProduct[$i]->url = CUploadedFile::getInstanceByName($photosProduct[$i], 'url');
+				print_r($photosProduct[$i]->url); die();
+			//	$photosProduct[$i]->url->saveAs($dir."/".$photosProduct[$i]->url);	        
+				            
+	        }
+		die();
+			}
+		
+					if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
-		}
 
 		$this->render('create',array(
 			'model'=>$model,
+			'photosProduct' => $photosProduct,
+        'photosNumber' => isset($_POST['PhotoProduct']) ? count($_POST['PhotoProduct'])-1 : 0, //How many PhotoEvent the user added
+        'update' => false,
 		));
 	}
 
@@ -87,10 +127,17 @@ class ProductoController extends Controller
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
-
+		$photosProduct = array();
+		$photos= ProductoFoto::model()->find(array('condition' => 'producto_id = :productId','params' => array(':productId' => $id)));
+		$photosProduct= array();
+		if ($photos != null)
+		foreach($photos as $t)
+		{
+		    $photosProduct[$t->id] = $t->attributes;
+		}
+		//$photosProduct = ProductoFoto::model()->find(array('condition' => 'producto_id = :productId','params' => array(':productId' => $id)));
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
 		if(isset($_POST['Producto']))
 		{
 			$model->attributes=$_POST['Producto'];
@@ -99,8 +146,7 @@ class ProductoController extends Controller
 		}
 
 		$this->render('update',array(
-			'model'=>$model,
-		));
+			'model'=>$model,'photosProduct' => $photosProduct, 'update' => true,'photosNumber'=>0,));
 	}
 
 	/**

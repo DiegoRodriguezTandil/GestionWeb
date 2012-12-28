@@ -5,7 +5,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Provincia','url'=>array('index')),
+	array('label'=>'Lista Provincia','url'=>array('index')),
 	array('label'=>'Create Provincia','url'=>array('create')),
 );
 
@@ -43,8 +43,9 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'filter'=>$model,
 	'columns'=>array(
 		'id',
-		'nombre',
-		'pais_id',
+
+		array( 'name'=>'nombre', 'header'=>'Provincia', 'value'=>'nombre' ),
+		array( 'name'=>'pais_search', 'header'=>'País', 'value'=>'$data->pais->nombre' ),
 		array(
 			'class'=>'bootstrap.widgets.TbButtonColumn',
 		),

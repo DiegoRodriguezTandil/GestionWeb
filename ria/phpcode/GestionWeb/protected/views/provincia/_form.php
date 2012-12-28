@@ -11,7 +11,8 @@
 
 	<?php echo $form->textFieldRow($model,'nombre',array('class'=>'span5','maxlength'=>45)); ?>
 
-	<?php echo $form->textFieldRow($model,'pais_id',array('class'=>'span5')); ?>
+	<?php echo $form->dropDownListRow($model,'pais_id', CHtml::listData(Pais::model()->findAll(), 'id', 'nombre')); ?>
+
 
 	<div class="form-actions">
 		<?php $this->widget('bootstrap.widgets.TbButton', array(

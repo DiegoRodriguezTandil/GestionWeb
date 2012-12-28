@@ -21,7 +21,7 @@
     <div id="photo-<?php echo $i ?>">
         <div class="simple">   
             <?php echo CHtml::activeLabelEx($photo,'photoUrl'); ?>
-            <?php echo CHtml::activeFileField($photo, "photoUrl[$i]"); ?>
+            <?php echo CHtml::activeField($photo, "photoUrl[$i]"); ?>
         </div>
         <br />
     </div>

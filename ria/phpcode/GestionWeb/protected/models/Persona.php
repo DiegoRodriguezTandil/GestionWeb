@@ -6,7 +6,6 @@
  * The followings are the available columns in table 'persona':
  * @property integer $id
  * @property string $apellido
- * @property string $nombre
  * @property string $empresa
  * @property string $dni
  * @property string $web
@@ -50,13 +49,13 @@ class Persona extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('apellido, nombre, empresa, dni, web', 'length', 'max'=>45),
-			array('apellido, nombre, empresa, dni, web', 'required'),
+			array('apellido, empresa, dni, web', 'length', 'max'=>45),
+			array('apellido, empresa, dni, web', 'required'),
 			array('foto, intereses', 'length', 'max'=>255),
 			array('cuit', 'length', 'max'=>15),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, apellido, nombre, empresa, dni, web, foto, intereses, cuit', 'safe', 'on'=>'search'),
+			array('id, apellido, empresa, dni, web, foto, intereses, cuit', 'safe', 'on'=>'search'),
 		);
 	}
 

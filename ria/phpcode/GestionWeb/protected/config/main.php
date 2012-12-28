@@ -18,6 +18,8 @@ return array(
 		'application.models.*',
 		'application.components.*',
 	),
+	
+
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
@@ -29,6 +31,17 @@ return array(
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			//'ipFilters'=>array('127.0.0.1','::1'),
 		),
+		
+		'image'=>array(
+	   		'class'=>'application.extensions.image.CImageComponent',
+		    // GD or ImageMagick
+		    'driver'=>'GD',
+	    	// ImageMagick setup path
+	 	   'params'=>array('directory'=>'C:/temp/'),     
+	       'createOnDemand'=>true, // requires apache mod_rewrite enabled
+           'install'=>true, // allows you to run the installer
+	),
+		
 		
 	),
 

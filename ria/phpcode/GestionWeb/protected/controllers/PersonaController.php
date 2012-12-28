@@ -61,20 +61,38 @@ class PersonaController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Persona;
+		$model= new Persona;
+		 // Adding an empty Mail to the form
+         $mails = array( new Mail, );
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
-		if(isset($_POST['Persona']))
+//print_r($_POST); die();
+		if(isset($_POST['Persona'], $_POST['Mail']))
 		{
 			$model->attributes=$_POST['Persona'];
+			$valid=$model->validate();
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+		    	foreach ( $_POST['Mail'] as $i => $mail ) {
+		            $mails[$i] = new Mail;  
+		            if ( isset( $_POST['Mail'][$i] ) ){//print_r($model); die();
+		            	$mails[$i]->attributes=$_POST['Mail'][$i];			            	
+		                $mails[$i]->tipo = $_POST['Mail'][$i]['tipo'];
+						$mails[$i]->direccion = $_POST['Mail'][$i]['direccion'];
+						$mails[$i]->persona_id = $model->id;
+						print_r($_POST['Mail']); die();				
+						$valid = $valid && $mails[$i]->validate();  
+						$mails[$i]->save();
+							//$this->redirect(array('view','id'=>$model->id));             
+		      		  }
+			 }
+				//$this->redirect(array('view','id'=>$model->id));
+			
 		}
 
 		$this->render('create',array(
-			'model'=>$model,
+			'model'=>$model, 'mails' => $mails,
+			'mailsAgregados' => isset($_POST['mailsAgregados']) ? count($_POST['mailsAgregados'])-1 : 0, 
 		));
 	}
 
