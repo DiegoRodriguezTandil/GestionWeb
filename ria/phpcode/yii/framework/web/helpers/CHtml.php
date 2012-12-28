@@ -1389,8 +1389,8 @@ EOD;
 		// add a hidden field so that if a model only has a file field, we can
 		// still use isset($_POST[$modelClass]) to detect if the input is submitted
 		$hiddenOptions=isset($htmlOptions['id']) ? array('id'=>self::ID_PREFIX.$htmlOptions['id']) : array('id'=>false);
-		return self::hiddenField($htmlOptions['name'],'',$hiddenOptions)
-			. self::activeInputField('file',$model,$attribute,$htmlOptions);
+		//return self::hiddenField($htmlOptions['name'],'',$hiddenOptions) . self::activeInputField('file',$model,$attribute,$htmlOptions);
+		return self::activeHiddenField($model,$attribute,$hiddenOptions) . self::activeInputField('file',$model,$attribute,$htmlOptions);
 	}
 
 	/**

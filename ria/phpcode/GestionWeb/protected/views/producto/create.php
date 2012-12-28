@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Producto', 'url'=>array('index')),
-	array('label'=>'Manage Producto', 'url'=>array('admin')),
+	array('label'=>'Listar Productos', 'url'=>array('index')),
+	array('label'=>'Administrar Productos', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Producto</h1>
+<h1>Crear Producto</h1>
 
-<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php echo $this->renderPartial('_form', array('model'=>$model, 'photosProduct'=>$photosProduct, 'photosNumber'=>$photosNumber, 'update'=>$update,)); ?>
