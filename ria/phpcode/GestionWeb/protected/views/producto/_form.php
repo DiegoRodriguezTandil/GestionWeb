@@ -14,9 +14,10 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Campos <span class="required">*</span> obligatorios.</p>
- 
-    <?php echo $form->errorSummary(array_merge( array($model), $photosProduct)); ?>
+
+	<p class="note">Campos obligatorios <span class="required">*</span>.</p>
+
+	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'nombre'); ?>
