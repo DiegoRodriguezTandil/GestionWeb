@@ -63,36 +63,61 @@ class PersonaController extends Controller
 	{
 		$model= new Persona;
 		 // Adding an empty Mail to the form
-         $mails = array( new Mail, );
+        $mails = array( new Mail, );
+		$tels = array( new Telefono, );
+		$dirs = array( new Direccion, );
 
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-//print_r($_POST); die();
-		if(isset($_POST['Persona'], $_POST['Mail']))
+		if(isset($_POST['Persona'], $_POST['Mail'], $_POST['Telefono'], $_POST['Direccion']))
 		{
 			$model->attributes=$_POST['Persona'];
 			$valid=$model->validate();
 			if($model->save())
-		    	foreach ( $_POST['Mail'] as $i => $mail ) {
-		            $mails[$i] = new Mail;  
-		            if ( isset( $_POST['Mail'][$i] ) ){//print_r($model); die();
-		            	$mails[$i]->attributes=$_POST['Mail'][$i];			            	
-		                $mails[$i]->tipo = $_POST['Mail'][$i]['tipo'];
-						$mails[$i]->direccion = $_POST['Mail'][$i]['direccion'];
-						$mails[$i]->persona_id = $model->id;
-						print_r($_POST['Mail']); die();				
-						$valid = $valid && $mails[$i]->validate();  
-						$mails[$i]->save();
-							//$this->redirect(array('view','id'=>$model->id));             
-		      		  }
-			 }
-				//$this->redirect(array('view','id'=>$model->id));
+		    foreach ( $_POST['Mail'] as $i => $mail ) {
+		    	$mails[$i] = new Mail;  
+		        if ( isset( $_POST['Mail'][$i] ) ){//print_r($model); die();
+		        	$mails[$i]->attributes=$_POST['Mail'][$i];			            	
+		            $mails[$i]->tipo = $_POST['Mail'][$i]['tipo'];
+					$mails[$i]->direccion = $_POST['Mail'][$i]['direccion'];
+					$mails[$i]->persona_id = $model->id;	
+					$valid = $valid && $mails[$i]->validate();  
+					$mails[$i]->save();
+				 }
+			  }
+			foreach ( $_POST['Telefono'] as $i => $tel ) {
+		    	$tels[$i] = new Telefono;  
+		        if ( isset( $_POST['Telefono'][$i] ) ){//print_r($model); die();
+		        	$tels[$i]->attributes=$_POST['Telefono'][$i];			            	
+		            $tels[$i]->tipoid = $_POST['Telefono'][$i]['tipoid'];
+					$tels[$i]->localidad = $_POST['Telefono'][$i]['localidad'];
+					$tels[$i]->numero = $_POST['Telefono'][$i]['numero'];
+					$tels[$i]->personaid = $model->id;	
+					$valid = $valid && $tels[$i]->validate();  
+					$tels[$i]->save();
+				 }
+			  }
+			foreach ( $_POST['Direccion'] as $i => $dir ) {
+		    	$dirs[$i] = new Direccion;  
+		        if ( isset( $_POST['Direccion'][$i] ) ){//print_r($_POST['Direccion'][$i]); die();
+		        	$dirs[$i]->attributes=$_POST['Direccion'][$i];			            	
+		            $dirs[$i]->tipodireccion = $_POST['Direccion'][$i]['tipodireccion'];
+					$dirs[$i]->localidad = $_POST['Direccion'][$i]['localidad'];
+					$dirs[$i]->numero = $_POST['Direccion'][$i]['numero'];
+					$dirs[$i]->persona_id = $model->id;	
+					//$valid = $valid && $dirs[$i]->validate();  
+					$dirs[$i]->save();
+				 }
+			  }
+				$this->redirect(array('view','id'=>$model->id));
 			
 		}
 
 		$this->render('create',array(
 			'model'=>$model, 'mails' => $mails,
-			'mailsAgregados' => isset($_POST['mailsAgregados']) ? count($_POST['mailsAgregados'])-1 : 0, 
+			'tels' => $tels,
+			'dirs' => $dirs,
+			'dirsAgregados' => isset($_POST['dirsAgregados']) ? count($_POST['dirsAgregados'])-1 : 0,
+			'mailsAgregados' => isset($_POST['mailsAgregados']) ? count($_POST['mailsAgregados'])-1 : 0,
+			'telsAgregados' => isset($_POST['telsAgregados']) ? count($_POST['telsAgregados'])-1 : 0,  
 		));
 	}
 

@@ -7,7 +7,7 @@
 
 	<p class="help-block">Campos con <span class="required">*</span> son requeridos.</p>
 
-	<?php echo $form->errorSummary(array_merge(array($model), $mails)); ?>
+	<?php echo $form->errorSummary(array_merge(array($model), $mails, $tels)); ?>
 	
 	<?php echo $form->textFieldRow($model,'apellido',array('class'=>'span5','maxlength'=>45)); ?>
 
@@ -25,19 +25,46 @@
 
 	<?php echo $form->textFieldRow($model,'fechaAlta',array('class'=>'span5')); ?>
 	
-	Mails
+	Mails<a name="addmails" id="addmails" class="icon-plus-sign" type="button" type="buttton"></a>
 	
 	<?php foreach($mails as $i => $mail): ?>
     <div id="mail-<?php echo $i ?>">
         <div class="simple">   
             <?php echo $form->textFieldRow($mail,"[$i]direccion",array('class'=>'span5 mailclass','prepend'=>'@')); ?>
-            <?php echo $form->textFieldRow($mail,"[$i]tipo",array('class'=>'span5 mailclass')); ?>
+			<?php echo $form->dropDownListRow($mail, "[$i]tipo", CHtml::listData(Tipocontacto::model()->findAll(), 'id', "tipo"), array('class'=>'span5 mailclass')); ?>           
         </div>
         <br />
     </div>
     <?php endforeach; ?>
-    <?php echo CHtml::button('Agregar e-mail', array('name'=>'addmails', 'id'=>'addmails')); ?>
-
+    
+        Teléfonos<a name="addtels" id="addtels" class="icon-plus-sign" type="button" type="buttton"></a>
+	
+	<?php foreach($tels as $i => $tel): ?>
+    <div id="tel-<?php echo $i ?>" >
+    		<div class="simple">
+            <?php echo $form->textFieldRow($tel,"[$i]localidad",array('class'=>'span5 telclass')); ?>          
+            <?php echo $form->textFieldRow($tel,"[$i]numero",array('class'=>'span5 telclass input-small')); ?>
+            <?php echo $form->dropDownListRow($tel, "[$i]tipoid", CHtml::listData(Tipocontacto::model()->findAll(), 'id', "tipo"), array('class'=>'telclass')); ?> 
+            <?php echo $form->dropDownListRow($tel, "[$i]localidad", CHtml::listData(Localidad::model()->findAll(), 'id', "nombre"), array('class'=>'telclass')); ?>
+            </div>   
+    </div>
+   <?php endforeach; ?>
+       
+        Dirección<a name="adddirs" id="adddirs" class="icon-plus-sign" type="button" type="buttton"></a>
+	
+	<?php foreach($dirs as $i => $dir): ?>
+    <div id="dir-<?php echo $i ?>">
+    		<div class="simple">
+            <?php echo $form->textFieldRow($dir,"[$i]calle",array('class'=>'span5 dirclass')); ?>          
+            <?php echo $form->textFieldRow($dir,"[$i]numero",array('class'=>'span5 dirclass input-small')); ?>
+            <?php echo $form->dropDownListRow($dir, "[$i]tipodireccion", CHtml::listData(Tipocontacto::model()->findAll(), 'id', "tipo"), array('class'=>'dirclass')); ?> 
+            <?php echo $form->dropDownListRow($dir, "[$i]localidad", CHtml::listData(Localidad::model()->findAll(), 'id', "nombre"), array('class'=>'dirclass')); ?>
+            </div>   
+    </div>
+    <?php endforeach; ?>
+   
+   
+	
 	<div class="form-actions">
 		<?php $this->widget('bootstrap.widgets.TbButton', array(
 			'buttonType'=>'submit',
@@ -46,6 +73,7 @@
 		)); ?>
 	</div>
 	
+	
 	<script type="text/javascript">
 		var marker = $('input[id^="yt"]'); 
 		// I need to know how many photos I've already added when the validate return FALSE
@@ -53,47 +81,48 @@
 		//$('input[id^="yt"]').remove();
 		
 		// Add the event to the period's add button
-		$('#addmails').click(function () { 
-		    // I'm going to clone the first div containing the Model input couse I don't want to create a new div and add every single structure
+		$('#addmails').click(function () {
+		    // Clonamos el primer elemento en un div
 		    var divCloned = $('#mail-0').clone();      
-		    // I'm attaching the div to the last input created
+		    //Agregamos el div clonado al último agregado y aumentamos los mails agregados
 		    $('#mail-'+(mailsAgregados++)).after(divCloned);
-		    // Changin the div id
+		    // Cambiamos el id del div
 		    divCloned.attr('id', 'mail-'+mailsAgregados);
-		    // Initializing the div contents
-		    initNewInputs(divCloned.children('.simple'), mailsAgregados);
+		    //Inicializamos los divs.
+		    initNewInputs(divCloned.children('.simple'), mailsAgregados, '.mailclass');
+		});
+		
+		//Funcionalidad de teléfonos, igual a la anterior
+		var telsAgregados = <?php echo $telsAgregados; ?>;
+		$('#addtels').click(function () {
+		    var divCloned = $('#tel-0').clone();      
+		    $('#tel-'+(telsAgregados++)).after(divCloned);
+		    divCloned.attr('id', 'tel-'+telsAgregados);
+		    initNewInputs(divCloned.children('.simple'), telsAgregados, '.telclass');
+		});
+		
+		//Funcionalidad de direcciones, igual a la anterior
+		var dirsAgregados = <?php echo $dirsAgregados; ?>;
+		$('#adddirs').click(function () {
+		    var divCloned = $('#dir-0').clone();      
+		    $('#dir-'+(dirsAgregados++)).after(divCloned);
+		    divCloned.attr('id', 'dir-'+dirsAgregados);
+		    initNewInputs(divCloned.children('.simple'), dirsAgregados, '.dirclass');
 		});
 		 
-		function initNewInputs( divs, idNumber ) {//alert(idNumber);
+		function initNewInputs( divs, idNumber, classString ) {alert(idNumber);
 		    // Taking the div labels and resetting them. If you send wrong information,
 		    // Yii will show the errors. If you than clone that div, the css will be cloned too, so we have to reset it
 		    var labels = divs.children('label').get();
+		    debugger;
 		    for ( var i in labels )
-		        labels[i].setAttribute('class', 'required');      
-		 
-		    // Taking all inputs and resetting them.
-		    // We have to set value to null, set the class attribute to null and change their id and name with the right id.
-		    var inputs = $('.mailclass');//divs.children('input .mailclass').get();  
-		    
-		    		 	debugger;
-		    $(divs).find('.mailclass').each(function () {    
-		    	$(this).val('');alert($(this).attr("name"));
-		    	//$(this).setAttribute('class', '');
+		        labels[i].setAttribute('class', 'required');    
+		    var inputs = $(classString);		    
+		    $(divs).find(classString).each(function () {    
+		    	$(this).val('');
 		        $(this).attr("id",$(this).attr("id").replace('0', idNumber));
-		        $(this).attr("name",$(this).attr("name").replace('0', idNumber););
-		      });
-		        
-
-
-
-
-		    for ( var i in inputs  ) {alert('entra en for');
-		        inputs[i].value = "";
-		        inputs[i].setAttribute('class', '');
-		        inputs[i].id = inputs[i].id.replace(/\d+/, idNumber);
-		        inputs[i].name = inputs[i].name.replace(/\d+/, idNumber);
-		        alert( inputs[i].name);
-		    }
+		        $(this).attr("name",$(this).attr("name").replace('0', idNumber));
+		      });  	
 		}
 		</script>
 

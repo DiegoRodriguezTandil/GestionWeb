@@ -19,7 +19,7 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
-		'razon social',
+		//'razon social',
 		'empresa',
 		'dni',
 		'web',

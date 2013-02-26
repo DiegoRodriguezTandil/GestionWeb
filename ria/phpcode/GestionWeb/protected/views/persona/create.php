@@ -12,4 +12,8 @@ $this->menu=array(
 
 <h1>Create Persona</h1>
 
-<?php echo $this->renderPartial('_form', array('model'=>$model, 'mails'=>$mails, 'mailsAgregados'=>$mailsAgregados)); ?>
+<?php echo $this->renderPartial('_form', array('model'=>$model,
+ 'mails'=>$mails, 'tels'=>$tels, 'dirs'=>$dirs, 
+'dirsAgregados'=>$dirsAgregados,
+ 'mailsAgregados'=>$mailsAgregados,
+  'telsAgregados'=>$telsAgregados)); ?>
