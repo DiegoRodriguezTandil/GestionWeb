@@ -5,7 +5,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('razon social')); ?>:</b>
-	<?php echo CHtml::encode($data->razon social); ?>
+	<?php echo CHtml::encode($data->apellido); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('empresa')); ?>:</b>

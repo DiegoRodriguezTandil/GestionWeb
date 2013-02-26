@@ -18,7 +18,10 @@ return array(
 		'application.models.*',
 		'application.components.*',
 	),
-	
+	'aliases' => array(
+	    //If you manually installed it
+	    'xupload' => 'application.extensions.xupload'
+		),
 
 
 	'modules'=>array(
@@ -75,7 +78,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=gestion',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'mysqlpass',
+			'password' => '',
 			'charset' => 'utf8',
 		),
 		

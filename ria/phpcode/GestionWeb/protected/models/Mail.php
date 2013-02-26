@@ -71,7 +71,7 @@ class Mail extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'tipo' => 'Tipo',
-			'direccion' => 'Direccion',
+			'direccion' => 'E-mail',
 			'persona_id' => 'Persona',
 		);
 	}

@@ -111,6 +111,12 @@ class MailController extends Controller
 	 */
 	public function actionDelete($id)
 	{
+		//$model=$this->loadModel($id);		
+		if(Yii::app()->request->isAjaxRequest){
+		//  $this->renderPartial("_form",array('model'=>$model),false,true);
+		//  $this->loadModel($id)->delete();
+		 return 'ok';
+		 }
 		if(Yii::app()->request->isPostRequest)
 		{
 			// we only allow deletion via POST request

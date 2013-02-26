@@ -7,7 +7,7 @@
  * @property integer $id
  * @property integer $tipodireccion
  * @property string $calle
- * @property integer $personaid
+ * @property integer $persona_id
  * @property string $numero
  * @property integer $localidad
  *
@@ -44,13 +44,13 @@ class Direccion extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('tipodireccion, calle, personaid', 'required'),
-			array('tipodireccion, personaid, localidad', 'numerical', 'integerOnly'=>true),
+			array('tipodireccion, calle, persona_id', 'required'),
+			array('tipodireccion, persona_id, localidad', 'numerical', 'integerOnly'=>true),
 			array('calle', 'length', 'max'=>100),
 			array('numero', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, tipodireccion, calle, personaid, numero, localidad', 'safe', 'on'=>'search'),
+			array('id, tipodireccion, calle, persona_id, numero, localidad', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -63,7 +63,7 @@ class Direccion extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'localidad0' => array(self::BELONGS_TO, 'Localidad', 'localidad'),
-			'persona' => array(self::BELONGS_TO, 'Persona', 'personaid'),
+			'persona' => array(self::BELONGS_TO, 'Persona', 'persona_id'),
 			'tipodireccion0' => array(self::BELONGS_TO, 'Tipocontacto', 'tipodireccion'),
 		);
 	}
@@ -77,7 +77,7 @@ class Direccion extends CActiveRecord
 			'id' => 'ID',
 			'tipodireccion' => 'Tipodireccion',
 			'calle' => 'Calle',
-			'personaid' => 'Personaid',
+			'persona_id' => 'Personaid',
 			'numero' => 'Numero',
 			'localidad' => 'Localidad',
 		);
@@ -97,7 +97,7 @@ class Direccion extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('tipodireccion',$this->tipodireccion);
 		$criteria->compare('calle',$this->calle,true);
-		$criteria->compare('personaid',$this->personaid);
+		$criteria->compare('persona_id',$this->persona_id);
 		$criteria->compare('numero',$this->numero,true);
 		$criteria->compare('localidad',$this->localidad);
 

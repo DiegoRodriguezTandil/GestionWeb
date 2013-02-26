@@ -110,6 +110,11 @@ class TelefonoController extends Controller
 	 */
 	public function actionDelete($id)
 	{
+		if(Yii::app()->request->isAjaxRequest){
+		//  $this->renderPartial("_form",array('model'=>$model),false,true);
+		//  $this->loadModel($id)->delete();
+		 return 'ok';
+		 }
 		$this->loadModel($id)->delete();
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser

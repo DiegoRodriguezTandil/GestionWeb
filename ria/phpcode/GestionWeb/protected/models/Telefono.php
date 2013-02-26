@@ -73,8 +73,8 @@ class Telefono extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'localidad' => 'Localidad',
-			'numero' => 'Numero',
-			'tipoid' => 'Tipoid',
+			'numero' => 'Número',
+			'tipoid' => 'Tipo',
 			'personaid' => 'Personaid',
 		);
 	}

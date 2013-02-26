@@ -1,5 +1,4 @@
 <?php
-
 class PersonaController extends Controller
 {
 	/**
@@ -107,6 +106,7 @@ class PersonaController extends Controller
 					$dirs[$i]->save();
 				 }
 			  }
+			if (isset($model->id))
 				$this->redirect(array('view','id'=>$model->id));
 			
 		}
@@ -132,18 +132,101 @@ class PersonaController extends Controller
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
+		
+		$id = $model->getPrimaryKey();
+		$personatablas=$model->with('mails')->with('telefonos')->with('direccions')->findAll('t.id=:id',array(':id'=>$id));
+		$mails = array( new Mail, );
+		$tels = array( new Telefono, );
+		$dirs = array( new Direccion, );
+		 $uploadedFile=CUploadedFile::getInstance($model,'foto');
+		die($uploadedFile);
+		if (sizeof($personatablas[0]->mails) > 0)
+			$mails = $personatablas[0]->mails;	
+		if (sizeof($personatablas[0]->telefonos) > 0)
+			$tels = $personatablas[0]->telefonos;	
+		if (sizeof($personatablas[0]->direccions) > 0)
+			$dirs = $personatablas[0]->direccions;	
+		
+		$mailsAgregados = sizeof($mails);
+		$telsAgregados = sizeof($tels);
+		$dirsAgregados = sizeof($dirs);
 
-		if(isset($_POST['Persona']))
+		if(isset($_POST['Persona'], $_POST['Mail'], $_POST['Telefono'], $_POST['Direccion']))
 		{
 			$model->attributes=$_POST['Persona'];
+			$valid=$model->validate(); 
 			if($model->save())
+		    foreach ( $_POST['Mail'] as $i => $mail ) {
+		    	$mails[$i] = new Mail;  
+		        if ( isset( $_POST['Mail'][$i]) ){//print_r($model); die();
+		        	$mails[$i]->attributes=$_POST['Mail'][$i];		
+		        	if ( isset( $_POST['Mail'][$i]['id']) ) {
+		        		$modelDetail = Mail::model();
+						$mails[$i] = $this->loadModeldetail($_POST['Mail'][$i]['id'], $modelDetail);
+		        	}										
+		        	$mails[$i]->attributes=$_POST['Mail'][$i];			            	
+		            $mails[$i]->tipo = $_POST['Mail'][$i]['tipo'];
+					$mails[$i]->direccion = $_POST['Mail'][$i]['direccion'];
+					$mails[$i]->persona_id = $model->id;	
+					$valid = $valid && $mails[$i]->validate();  
+					$mails[$i]->save();
+				 }
+			  }
+			foreach ( $_POST['Telefono'] as $i => $tel ) {
+		    	$tels[$i] = new Telefono;  
+		        if ( (isset( $_POST['Telefono'][$i] )) && ($_POST['Telefono'][$i]['numero'] <> '') ){//print_r($model); die();
+		        	$tels[$i]->attributes=$_POST['Telefono'][$i];	
+						if ( isset( $_POST['Telefono'][$i]['id']) ) 
+							{$modelDetail = Telefono::model();
+							 $tels[$i] = $this->loadModeldetail($_POST['Telefono'][$i]['id'], $modelDetail);}				            	
+		            $tels[$i]->tipoid = $_POST['Telefono'][$i]['tipoid'];
+					$tels[$i]->localidad = $_POST['Telefono'][$i]['localidad'];
+					$tels[$i]->numero = $_POST['Telefono'][$i]['numero'];
+					$tels[$i]->personaid = $model->id;	
+					$valid = $valid && $tels[$i]->validate();  
+					$tels[$i]->save();
+				 }
+			  }
+			foreach ( $_POST['Direccion'] as $i => $dir ) {
+		    	$dirs[$i] = new Direccion;  
+		        if (( isset( $_POST['Direccion'][$i])) && ($_POST['Direccion'][$i]['calle'] <> '')) {//print_r($_POST['Direccion'][$i]); die();
+		        	$dirs[$i]->attributes=$_POST['Direccion'][$i];	
+					if ((isset( $_POST['Direccion'][$i]['id']) ) && ($_POST['Direccion'][$i]['id'] <> ''))  
+							{$modelDetail = Direccion::model();
+							 $dirs[$i] = $this->loadModeldetail($_POST['Direccion'][$i]['id'], $modelDetail);}          	
+		            $dirs[$i]->tipodireccion = $_POST['Direccion'][$i]['tipodireccion'];
+					$dirs[$i]->localidad = $_POST['Direccion'][$i]['localidad'];
+					$dirs[$i]->numero = $_POST['Direccion'][$i]['numero'];
+					$dirs[$i]->calle = $_POST['Direccion'][$i]['calle'];
+					$dirs[$i]->persona_id = $model->id;	
+					//$valid = $valid && $dirs[$i]->validate();  
+					$dirs[$i]->save();
+				 }
+			  }
+			if (isset($model->id))
 				$this->redirect(array('view','id'=>$model->id));
+			
 		}
 
 		$this->render('update',array(
-			'model'=>$model,
-		));
+					'model'=>$model, 'mails' => $mails,
+					'tels' => $tels,
+					'dirs' => $dirs,
+					'dirsAgregados' => $dirsAgregados,
+					'mailsAgregados' => $mailsAgregados,
+					'telsAgregados' => $telsAgregados,  
+				));
+
 	}
+
+ 		public function loadModeldetail($id, $modelDetail)
+        {
+                $model=$modelDetail->findByPk((int)$id);
+                if($model===null)
+                        throw new CHttpException(404,'The requested page does not exist.');
+                return $model;
+        }
+
 
 	/**
 	 * Deletes a particular model.

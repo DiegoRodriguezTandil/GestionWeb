@@ -68,9 +68,9 @@ class Persona extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'clientes' => array(self::HAS_MANY, 'Cliente', 'persona_id'),
-			'direccions' => array(self::HAS_MANY, 'Direccion', 'personaid'),
-			'mails' => array(self::HAS_MANY, 'Mail', 'personaid'),
-			'mailsCount' => array(self::STAT, 'Mail', 'personaid'),
+			'direccions' => array(self::HAS_MANY, 'Direccion', 'persona_id'),
+			'mails' => array(self::HAS_MANY, 'Mail', 'persona_id'),
+			'mailsCount' => array(self::STAT, 'Mail', 'persona_id'),
 			'proveedors' => array(self::HAS_MANY, 'Proveedor', 'personaid'),
 			'telefonos' => array(self::HAS_MANY, 'Telefono', 'personaid'),
 			'usuarios' => array(self::HAS_MANY, 'Usuario', 'personaid'),
@@ -108,7 +108,7 @@ class Persona extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('apellido',$this->apellido,true);
-		$criteria->compare('nombre',$this->nombre,true);
+		//$criteria->compare('nombre',$this->nombre,true);
 		$criteria->compare('empresa',$this->empresa,true);
 		$criteria->compare('dni',$this->dni,true);
 		$criteria->compare('web',$this->web,true);

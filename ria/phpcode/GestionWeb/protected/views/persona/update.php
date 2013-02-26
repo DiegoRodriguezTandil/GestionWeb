@@ -15,4 +15,8 @@ $this->menu=array(
 
 <h1>Update Persona <?php echo $model->id; ?></h1>
 
-<?php echo $this->renderPartial('_form',array('model'=>$model)); ?>
+<?php echo $this->renderPartial('_form',array('model'=>$model,
+ 'mails'=>$mails, 'tels'=>$tels, 'dirs'=>$dirs, 
+'dirsAgregados'=>$dirsAgregados,
+ 'mailsAgregados'=>$mailsAgregados,
+  'telsAgregados'=>$telsAgregados)); ?>

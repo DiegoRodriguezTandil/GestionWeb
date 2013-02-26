@@ -25,15 +25,14 @@
 	<?php
 	$this->widget('bootstrap.widgets.TbNavbar', array(
 				'type'=>null, // null or 'inverse'
-				'brand'=>'Qwavee Gestión',
+				'brand'=>'Casa Sebastián',
 				'brandUrl'=>'www.qwavee.com',
 				'collapse'=>true, // requires bootstrap-responsive.css
 				'items'=>array(
 					array(
 					'class'=>'bootstrap.widgets.TbMenu',
 					'items'=>array(
-								array('label'=>'Home', 'url'=>'#', 'active'=>true),
-								array('label'=>'Link', 'url'=>'#'),
+								array('label'=>'Inicio', 'url'=>'#', 'active'=>true),								
 								array('label'=>'Personas', 'url'=>'#', 
 								'items'=>array(
 										array('label'=>'Nueva Persona', 'url'=>'index.php?r=persona/create'),
@@ -50,13 +49,24 @@
 										array('label'=>'Provincias', 'url'=>'index.php?r=provincia'),
 										array('label'=>'Localidades', 'url'=>'index.php?r=localidad'),					
 									)),
-								array('label'=>'Productos', 'url'=>'#', 
+								array('label'=>'Poductos', 'url'=>'#', 
 								'items'=>array(
 										array('label'=>'Producto', 'url'=>'index.php?r=producto'),
 										array('label'=>'Categoria', 'url'=>'index.php?r=categoriaProducto'),
 										array('label'=>'LISTADOS'),
 										array('label'=>'Stock', 'url'=>'index.php?r=stock'),
 															
+									)),
+								array('label'=>'Configuración', 'url'=>'#', 
+								'items'=>array(
+										array('label'=>'Tipo de Contacto', 'url'=>'index.php?r=tipocontacto/create'),	
+										'---',									
+										array('label'=>'Georeferencia', 'url'=>'#', 
+										'items'=>array(
+												array('label'=>'Paises', 'url'=>'index.php?r=pais'),
+												array('label'=>'Provincias', 'url'=>'index.php?r=provincia'),
+												array('label'=>'Localidades', 'url'=>'index.php?r=localidad'),					
+											)),									
 									)),
 								
 					),
