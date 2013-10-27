@@ -1,0 +1,209 @@
+2013/10/07 19:52:12 [trace] [system.CModule] Loading "log" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 19:52:12 [trace] [system.CModule] Loading "bootstrap" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 19:52:12 [trace] [system.CModule] Loading "request" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 19:52:12 [trace] [system.CModule] Loading "urlManager" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 19:52:12 [trace] [system.CModule] Loading "themeManager" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (40)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 19:52:12 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\site\index.php (64)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (40)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 19:52:12 [trace] [system.CModule] Loading "assetManager" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\site\index.php (132)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (40)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 19:52:12 [trace] [system.CModule] Loading "clientScript" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\site\index.php (132)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (40)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 19:52:12 [trace] [system.CModule] Loading "format" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\site\index.php (132)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (40)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 19:52:12 [trace] [system.CModule] Loading "user" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\layouts\tpl_navigation.php (35)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\layouts\main.php (56)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\layouts\column1.php (14)
+2013/10/07 19:52:12 [trace] [system.CModule] Loading "session" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\layouts\tpl_navigation.php (35)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\layouts\main.php (56)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\layouts\column1.php (14)
+2013/10/07 20:30:00 [trace] [system.CModule] Loading "log" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:00 [trace] [system.CModule] Loading "bootstrap" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:00 [trace] [system.CModule] Loading "request" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:00 [trace] [system.CModule] Loading "urlManager" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:00 [trace] [system.CModule] Loading "themeManager" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (40)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:00 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\site\index.php (64)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (40)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:01 [trace] [system.CModule] Loading "assetManager" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\site\index.php (132)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (40)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:01 [trace] [system.CModule] Loading "clientScript" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\site\index.php (132)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (40)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:01 [trace] [system.CModule] Loading "format" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\site\index.php (132)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (40)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:01 [trace] [system.CModule] Loading "user" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\layouts\tpl_navigation.php (35)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\layouts\main.php (56)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\layouts\column1.php (14)
+2013/10/07 20:30:01 [trace] [system.CModule] Loading "session" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\layouts\tpl_navigation.php (35)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\layouts\main.php (56)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\layouts\column1.php (14)
+2013/10/07 20:30:16 [trace] [system.CModule] Loading "log" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:16 [trace] [system.CModule] Loading "bootstrap" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:16 [trace] [system.CModule] Loading "request" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:16 [trace] [system.CModule] Loading "urlManager" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:16 [trace] [system.CModule] Loading "themeManager" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (40)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:16 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\site\index.php (64)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (40)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:16 [trace] [system.CModule] Loading "assetManager" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\site\index.php (132)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (40)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:16 [trace] [system.CModule] Loading "clientScript" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\site\index.php (132)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (40)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:16 [trace] [system.CModule] Loading "format" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\site\index.php (132)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (40)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:16 [trace] [system.CModule] Loading "user" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\layouts\tpl_navigation.php (35)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\layouts\main.php (56)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\layouts\column1.php (14)
+2013/10/07 20:30:16 [trace] [system.CModule] Loading "session" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\layouts\tpl_navigation.php (35)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\layouts\main.php (56)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\layouts\column1.php (14)
+2013/10/07 20:30:20 [trace] [system.CModule] Loading "log" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:20 [trace] [system.CModule] Loading "bootstrap" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:20 [trace] [system.CModule] Loading "request" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:20 [trace] [system.CModule] Loading "urlManager" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:20 [trace] [system.CModule] Loading "themeManager" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (40)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:20 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\site\index.php (64)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (40)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:20 [trace] [system.CModule] Loading "assetManager" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\site\index.php (132)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (40)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:20 [trace] [system.CModule] Loading "clientScript" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\site\index.php (132)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (40)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:20 [trace] [system.CModule] Loading "format" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\site\index.php (132)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (40)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:20 [trace] [system.CModule] Loading "user" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\layouts\tpl_navigation.php (35)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\layouts\main.php (56)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\layouts\column1.php (14)
+2013/10/07 20:30:20 [trace] [system.CModule] Loading "session" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\layouts\tpl_navigation.php (35)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\layouts\main.php (56)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\layouts\column1.php (14)
+2013/10/07 20:30:26 [trace] [system.CModule] Loading "log" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:26 [trace] [system.CModule] Loading "bootstrap" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:26 [trace] [system.CModule] Loading "request" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:26 [trace] [system.CModule] Loading "urlManager" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:26 [trace] [system.CModule] Loading "themeManager" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:26 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\site\pages\typography.php (18)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:26 [trace] [system.CModule] Loading "user" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\site\pages\typography.php (61)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:26 [trace] [system.CModule] Loading "session" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\site\pages\typography.php (61)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:26 [trace] [system.CModule] Loading "clientScript" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\layouts\main.php (18)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\themes\abound\views\layouts\column1.php (14)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:30:26 [trace] [system.CModule] Loading "assetManager" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:31:31 [trace] [system.CModule] Loading "log" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:31:31 [trace] [system.CModule] Loading "bootstrap" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:31:31 [trace] [system.CModule] Loading "request" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:31:31 [trace] [system.CModule] Loading "urlManager" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:31:31 [trace] [system.CModule] Loading "themeManager" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (40)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:31:31 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\column1.php (2)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (40)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:31:31 [trace] [system.CModule] Loading "errorHandler" application component
+2013/10/07 20:31:41 [trace] [system.CModule] Loading "log" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:31:41 [trace] [system.CModule] Loading "bootstrap" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:31:41 [trace] [system.CModule] Loading "request" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:31:41 [trace] [system.CModule] Loading "urlManager" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:31:41 [trace] [system.CModule] Loading "themeManager" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (40)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:31:41 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\column1.php (2)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (40)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\index.php (13)
+2013/10/07 20:31:41 [trace] [system.CModule] Loading "clientScript" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\extensions\bootstrap\components\Bootstrap.php (50)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\main.php (17)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\column1.php (6)
+2013/10/07 20:31:41 [trace] [system.CModule] Loading "assetManager" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\extensions\bootstrap\components\Bootstrap.php (306)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\extensions\bootstrap\components\Bootstrap.php (50)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\main.php (17)
+2013/10/07 20:31:41 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\main.php (77)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\views\layouts\column1.php (6)
+in C:\Proyectos\Workspace\GestionWeb\ria\phpcode\GestionWeb\protected\controllers\SiteController.php (40)
+2013/10/07 20:31:41 [trace] [system.CModule] Loading "errorHandler" application component
